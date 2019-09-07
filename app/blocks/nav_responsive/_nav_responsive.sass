@@ -1,0 +1,205 @@
+.nav_responsive
+  background: $nav_responsive_bg
+  max-width: $nav_responsive_w
+  width: 100%
+  position: fixed
+  right: -100%
+  height: calc(100vh - #{$header-top_h})
+  top: 66px
+  transition: right 0.4s
+  overflow-x: hidden
+  padding-top: $nav_h
+  z-index: 1007
+  @media screen and (max-width: 480px)
+    width: 80%
+    min-width: 270px
+  &_open
+    right: 0
+  &__footer
+    width: 100%
+    height: 70px
+    background: $panel-1__header_bg
+    position: absolute
+    bottom: 0
+    z-index: 60
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    padding-left: 25px
+    @media screen and (max-width: 320px)
+      height: 85px
+      padding-bottom: 16px
+    a 
+      background: $social-ic_bg
+      color: $nav_responsive_bg
+      height: 50px
+      width: 50px
+      border-radius: 50%
+      margin-right: 42px
+      display: flex
+      justify-content: center
+      align-items: center
+      &:hover
+        background: $social-ic_hover
+      &:active
+        background: $social-ic_active
+      @media screen and (max-width: 420px)
+        margin-right: 25px
+      .vk-ic,
+      .inst-ic,
+      .youtube-ic
+        fill: $panel-1__header_bg
+        position: absolute
+        &__container
+          position: relative
+      .vk-ic
+        bottom: 0
+        top: 4px
+        left: 0
+        right: 0
+        margin: auto
+        &__container
+          height: 50px
+          width: 30px
+      .inst-ic
+        &__container
+          height: 24px
+          width: 22px
+      .youtube-ic
+        &__container
+          height: 25px
+          width: 26px
+          
+          
+/* Style Nav_Responsive Panels */
+.panels
+  z-index: 59
+  position: relative
+  height: $nav_responsive_h
+  ul
+    overflow-y: auto
+    height: $nav_responsive_h 
+    padding: 0
+    margin: 0
+    position: absolute
+    width: 100%
+    padding-bottom: 90px
+    background: $nav_responsive_bg
+    li
+      p 
+        padding-left: 20px
+        color: $footer__text_color
+        font-size: 0.9em
+      .commercial-offer2__open
+        cursor: pointer
+        color: $nav__link_hover
+        &:hover
+          color: #fdcc00
+      a 
+        display: block
+        padding-left: 20px
+        width: 100%
+        color: $nav__link_color
+        height: $nav__link_h
+        line-height: $nav__link_h
+        border-bottom: solid 1px $panel-1__header_bg
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif
+        font-size: 18px
+        transition: all 0.2s
+        &:hover
+          color: $nav__link_hover
+      .panel-1__header
+        background: $panel-1__header_bg
+      .link-panel-2,
+      .link-panel-3
+        position: relative
+      .link-panel-2__ic,
+      .link-panel-3__ic
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 20px
+        margin: auto
+        height: 11px
+        width: 11px 
+        div
+          height: 11px
+          width: 11px
+          border-bottom: solid 2px $nav__btn_color
+          border-right: solid 2px $nav__btn_color
+          transform: rotate(-42deg)
+      .link-phone,
+      .link-commercial-offer,
+      .linlk-location
+        border-bottom: none
+      .link-phone
+        font-size: 26px
+      .link-commercial-offer, .linlk-location
+        font-family: 'robotoregular', Arial, Helvetica, sans-serif
+        font-size: 16px
+      .link-commercial-offer
+        color: $nav__link_hover
+      .linlk-location
+        padding-left: 10px
+      
+        
+.linlk-location__container
+  display: flex
+  align-items: center
+  div
+    width: 34px
+    padding-left: 20px
+        
+
+/* Style Panel-2 & Panel-3 */        
+ul.panel-2,
+ul.panel-3
+  width: 100%
+  right: -100%
+  top: 0
+  li 
+    a 
+      border-bottom: none
+ul li a.panel-2__header,
+ul li a.panel-3__header
+  position: relative
+  padding-left: 0
+  span
+    display: block
+    text-align: center
+    width: 100%
+    border-bottom: solid 1px $panel-1__header_bg
+.panel-2__header-ic,
+.panel-3__header-ic
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 20px
+  margin: auto
+  height: 11px
+  width: 11px
+  display: flex
+  align-items: center
+  div
+    display: block
+    height: 11px
+    width: 11px
+    border-bottom: solid 2px $nav__btn_color
+    border-left: solid 2px $nav__btn_color
+    transform: rotate(44deg)
+ 
+    
+ 
+/* Style Modal Nav_Responsive */ 
+.nav-modal
+  display: none
+  position: fixed
+  background: rgba(0, 0, 0, 0.4) 
+  width: 100%
+  height: 110%
+  top: -10px
+  z-index: 999
+  color: #fff
+
+

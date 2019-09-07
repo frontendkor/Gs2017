@@ -1,0 +1,238 @@
+.commercial-offer-modal__container
+  @media screen and (max-width: 1200px)
+    display: none
+    
+    
+.commercial-offer-modal
+  z-index: 99998
+  color: #fff
+  position: fixed
+  height: 100%
+  width: 100%
+  &__overlay
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    z-index: 6666
+    overflow: hidden
+    background: rgba(0, 0, 0, 0.4)
+    display: none
+  &__content
+    width: 697px
+    position: fixed
+    right: -704px
+    top: 140px
+    margin: auto
+    background: #292828
+    border-radius: 0 0 0 10px  
+    display: flex
+    z-index: 88888
+  &_open
+    width: 268px
+    line-height: 52px
+    background: $footer_bg
+    text-align: center
+    position: absolute
+    left: -159px
+    top: 108px
+    transform: rotate(-90deg)
+    box-shadow: 0 -3px 8px -1px rgba(0, 0, 0, .5)
+    border-radius: 10px 10px 0 0
+    cursor: pointer
+    p
+      margin-top: 0
+      margin-bottom: 0
+  &_close
+    width: 32px
+    height: 32px
+    opacity: 0.3
+    cursor: pointer
+    margin-top: 25px
+    margin-left: 20px
+    &:before, &:after 
+      position: absolute
+      left: 25px
+      content: ' '
+      height: 25px
+      width: 2px
+      background-color: #fff
+    &:before
+      transform: rotate(45deg)
+    &:after 
+      transform: rotate(-45deg)
+  .error-text
+    width: 100%
+    text-align: center
+    bottom: -25px
+  form
+    margin-left: 10px
+    width: 260px
+    margin-top: 60px
+    margin-bottom: 83px
+    position: relative
+    @media screen and (max-width: 1200px)
+      margin: auto
+      margin-bottom: 70px
+    span.error-text
+      position: absolute
+      left: 0
+      bottom: 63px
+    input
+      width: 100%
+      height: 50px
+      line-height: 50px
+      margin-bottom: 25px
+      border-radius: 2px
+      border: 2px solid #FFF
+      font-family: 'robotoregular', Arial, Helvetica, sans-serif
+      font-size: 16px
+      color: black
+      padding: 0 10px
+      box-sizing: border-box
+      outline: none
+      &:focus
+        border: 2px solid $nav__link_hover
+    button
+      @include Btn_yellow
+      border: none
+      cursor: pointer
+      width: 100%
+  &__text
+    padding-left: 30px
+    flex-grow: 3
+    @media screen and (max-width: 1200px)
+      text-align: center
+      padding-left: 0
+      order: -1
+    p
+      font-family: 'robotolight', Arial, Helvetica, sans-serif
+      font-size: 36px
+      line-height: 40px
+      position: relative
+    span
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      margin-top: 0
+      margin-bottom: 50px
+      @media screen and (max-width: 1200px)
+        margin-top: 20px
+    .commercial-offer-modal__img
+      position: absolute
+      right: 0
+      bottom: 0
+        
+        
+.commercial-offer-modal2__container
+  overflow-y: auto
+  height: 100%
+  width: 100%
+  min-width: 320px
+  position: fixed
+  top: 0
+  z-index: 999988
+  display: none
+  
+  
+  
+.commercial-offer-modal2
+  position: absolute
+  width: 100%
+  min-height: 100%
+  overflow: hidden
+  padding-bottom: 100px
+  background: rgba(0, 0, 0, 0.4)
+  display: none
+  &__overlay
+    position: absolute
+    background: transparent
+    width: 100%
+    height: 100%
+  &__content
+    position: relative 
+    margin: auto
+    margin-top: -50px 
+    margin-bottom: 100px !important
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    width: 70%
+    max-width: 697px
+    border-radius: 10px
+    background: #292828  
+    z-index: 88888
+    @media screen and (max-width: 620px)
+      width: 96%
+  &_close
+    width: 32px
+    height: 32px
+    opacity: 0.3
+    cursor: pointer
+    position: absolute
+    top: 30px
+    right: 30px
+    &:before, &:after 
+      position: absolute
+      left: 15px
+      content: ' '
+      height: 25px
+      width: 2px
+      background-color: #fff
+    &:before
+      transform: rotate(45deg)
+    &:after 
+      transform: rotate(-45deg)
+  &__text
+    p
+      font-size: 36px
+      line-height: 40px
+      position: relative
+      padding-left: 80px
+      padding-right: 80px
+      margin-top: 70px
+      font-family: 'robotoregular', Arial, Helvetica, sans-serif
+      width: 100%
+      text-align: center
+      color: #fff
+      @media screen and (max-width: 957px)
+        padding-left: 50px
+        padding-right: 50px
+      @media screen and (max-width: 620px)
+        padding-left: 20px
+        padding-right: 20px
+      @media screen and (max-width: 386px)
+        font-size: 28px
+    span
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      margin-top: 20px
+      margin-bottom: 50px
+  .error-text
+    width: 100%
+    text-align: center
+    bottom: -25px
+  form
+    position: relative
+    width: 260px
+    margin: auto
+    margin-top: 60px
+    margin-bottom: 70px
+    input
+      width: 100%
+      height: 50px
+      line-height: 50px
+      margin-bottom: 25px
+      border-radius: 2px
+      border: 2px solid #FFF
+      font-family: 'robotoregular', Arial, Helvetica, sans-serif
+      font-size: 16px
+      color: black
+      padding: 0 10px
+      box-sizing: border-box
+      outline: none
+      &:focus
+        border: 2px solid $nav__link_hover
+    button
+      @include Btn_yellow
+      border: none
+      cursor: pointer
+      width: 100%
+  

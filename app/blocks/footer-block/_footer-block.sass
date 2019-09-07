@@ -1,0 +1,133 @@
+/* Style Footer ==================================================================================*/
+.footer 
+  flex: 0 0 auto
+  background: $footer_bg
+  color: #fff
+  padding-top: 57px
+  padding-bottom: 100px
+  color: $footer__text_color
+  .row
+    position: relative
+  &__content
+    @media screen and (max-width: 772px)
+      text-align: center
+      width: 85%
+      margin: auto
+    .communication
+      position: absolute
+      right: 0
+      display: none
+      align-items: center
+      a 
+        color: $footer__link_color
+        margin-left: 10px
+        &:hover
+          color: $nav__link_hover
+      &__ic
+        @include sprite($ic-pencil)
+      @media screen and (max-width: 1200px)
+        display: flex
+      @media screen and (max-width: 772px)
+        position: relative
+        margin-bottom: 40px
+        justify-content: center
+  h3 
+    color: #fff
+    font-weight: 100
+  a 
+    color: #fff
+    &:hover
+      color: $nav__link_hover
+  &__logo
+    height: 50px
+    @media screen and (max-width: 772px)
+      display: none
+  &__link-phone
+    display: block
+    margin-top: 40px
+    padding: 0
+    color: #fff 
+  &__working-hours
+    display: block
+    margin-top: 30px
+  &__link-email
+    display: block
+    margin-top: 30px
+    padding: 0
+    color: #fff 
+  &__address
+    margin-top: 25px
+    padding: 0
+  &__social-icon
+    margin-top: 30px
+    padding: 0
+  &__cop
+    margin-top: 25px
+    padding: 0
+    max-width: 500px
+    a 
+     padding: 0
+     color: #fff 
+    @media screen and (max-width: 772px)
+      margin: auto
+  &__link-phone, &__working-hours, &__link-email, &__address, &__social-icon
+    @media screen and (max-width: 1200px)
+        display: none
+/* Style Footer Nav */
+.footer__nav
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  .nav-1, .nav-2, .nav-3
+    flex-basis: 33%
+    padding-left: 15px
+    ul 
+      padding: 0
+      a 
+        display: block
+        color: $footer__link_color
+        padding-top: 5px
+        padding-bottom: 5px
+        &:hover
+          color: $nav__link_hover
+    @media screen and (max-width: 1200px)
+      display: none
+/* Style Footer Nav nav-3 */
+.nav-3
+  @media screen and (max-width: 1200px)
+    flex-basis: 100%
+    h3 
+      display: none
+  .treaty, .act, .logotip, .communication
+    display: flex
+    align-items: center
+    &__link
+      display: flex
+      p 
+        margin-top: 0
+        margin-bottom: 0
+        margin-left: 12px
+      a 
+        margin-left: 8px
+        color: $footer__text_color
+        text-decoration: underline
+        &:hover
+          color: $nav__link_hover
+  .treaty
+    &__ic
+      @include sprite($ic-dogovor)
+  .act
+    margin-top: 20px
+    &__ic
+      @include sprite($ic-act)
+  .logotip
+    margin-top: 45px
+    &__ic
+      @include sprite($ic-log)
+  .communication
+    margin-top: 140px
+    &__ic
+      @include sprite($ic-pencil)
+    &__link
+      a 
+        text-decoration: none

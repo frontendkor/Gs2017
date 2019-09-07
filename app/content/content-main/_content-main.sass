@@ -1,0 +1,306 @@
+#content-main
+  text-align: center
+  
+  
+/* Style Workers Prise Blocl ======================================================================*/ 
+/* Style workers-img */
+#workers-prise-blok
+  .workers-img
+    text-align: center
+    background: #f2f2f2 url(../img/back-call-bg.png) 
+    background-repeat: no-repeat
+    background-position: bottom 
+    background-size: 108% auto
+    overflow: hidden
+    @media screen and (max-width: 768px)
+      background: #f2f2f2
+    .container
+      .row
+        @media screen and (max-width: 1200px)
+          display: flex
+          justify-content: center
+    h1
+      color: #2a2929
+      margin: auto
+      margin-top: 90px
+      margin-bottom: 35px
+      @include Title-main
+  .workers
+    position: relative
+    padding-right: 0
+    padding-left: 0
+    @media screen and (max-width: 1200px)
+      width: 25%
+      &:nth-child(n+5)
+        display: none
+    @media screen and (max-width: 768px)
+      display: none
+  .worker_01, .worker_02, .worker_03, .worker_04, .worker_05
+    height: 227px
+    cursor: pointer
+    &:hover
+      div
+        margin-top: -13px
+    div
+      height: 240px
+      width: 100%
+      transition: all 0.3s
+    .worker_hover
+      margin-top: -13px 
+  @each $num in _01, _02, _03, _04, _05
+    .worker#{$num}
+      div
+        background: url(../img/main_page/performers/worker#{$num}.png) no-repeat
+        background-position: bottom center
+  .worker_01
+    div
+      @media screen and (min-width: 1201px)
+        background-position: bottom left
+      
+        
+    
+    
+/* Style Prise */
+#workers-prise-blok
+  @media screen and (max-width: 768px)
+    background: #f2f2f2 url(../img/back-call-bg.png) 
+    background-repeat: no-repeat
+    background-position: bottom 
+    background-size: 108% auto
+    padding-bottom: 70px
+  .container
+    .row
+      div
+        padding: 0
+  .workers-prise__row
+    display: flex
+    justify-content: center
+    div.valuation
+      @media screen and (max-width: 1200px)
+        width: 25%
+        &:nth-child(n+4)
+          display: none
+      @media screen and (max-width: 768px)
+        width: 70%
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        &:nth-child(n+4)
+          display: flex
+  a 
+    display: block
+    margin-top: 20px
+    color: #000
+    text-decoration: underline
+    font-size: 1.1em
+    &:hover
+      text-decoration: none
+    @media screen and (max-width: 768px)
+      text-align: left
+  p 
+    background: #fff599
+    display: inline-block
+    padding: 10px
+    margin-top: 20px
+    span 
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      font-size: 1.3em
+      
+      
+  
+/* Style All Prise Blocl ======================================================================*/         
+#all-prise-blok 
+  margin-top: 25px
+  ul
+    border: solid 2px $footer__link_color
+    display: flex
+    justify-content: center
+    width: 90%
+    max-width: 680px
+    border-radius: 50px
+    margin: auto
+    height: 60px
+    padding: 0
+    @media screen and (max-width: 768px)
+      flex-wrap: wrap
+      border: none
+      margin-bottom: 50px
+      margin-top: 50px
+    li 
+      a 
+        text-decoration: underline
+        color: #000
+        line-height: 60px
+        padding: 15px
+        &:hover
+          text-decoration: none
+        @media screen and (max-width: 768px)
+          line-height: 30px
+  .btn-prise__container
+    margin-top: 33px
+    position: relative
+    .line_decor
+      width: 100%
+      max-width: 920px
+      height: 1px 
+      background: $footer__link_color
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      z-index: 9
+    a.btn-prise
+      position: relative
+      z-index: 10
+      margin: auto
+      width: 90%
+      max-width: 270px
+      box-shadow: 0px 5px 21px 0px rgba(50, 50, 50, 0.49);
+      @include Btn_yellow
+          
+          
+          
+          
+/* Style Facts About Us ======================================================================*/     
+#facts-about-us       
+  h1 
+    margin-top: 90px
+    @include Title
+    
+
+/* Style Facts-1 */
+.facts-1
+  margin-top: 70px
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-direction: row
+  align-items: stretch
+  overflow-x: hidden
+  .left-block
+    width: 50%
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    @media screen and (max-width: 1200px)
+      width: auto
+    @media screen and (max-width: 830px)
+      flex-shrink: 0
+    &__img
+      background: url(../img/main_page/facts/facts-1_bg.png) no-repeat
+      background-position: right top
+      flex: 1 auto
+      @media screen and (max-width: 1200px)
+        display: none
+    &__text
+      ul
+        padding-left: 75px
+        padding-right: 45px
+        padding-bottom: 70px
+        padding-top: 0
+        margin-top: 0
+        margin-bottom: 0
+        @media screen and (max-width: 830px)
+          padding-left: 30px
+          padding-bottom: 80px
+        li 
+          display: flex
+          align-items: center
+          padding: 8px
+          &:first-child
+            padding-top: 0
+          .check-ic
+            @include sprite($check-ic)
+          span
+            font-size: 1.1em
+            margin-left: 14px
+            @media screen and (max-width: 830px)
+              font-size: 1em
+  .right-block
+    background: url(../img/main_page/facts/facts-1_bg.png) no-repeat
+    background-position: left top
+    width: 50%
+    height: 302px
+    @media screen and (max-width: 1200px)
+      flex: 1 auto
+      
+
+/* Style Facts-2 */      
+.facts-2
+  width: 100%
+  background: url(../img/main_page/facts/facts-2_bg.jpg) no-repeat
+  background-position: center top
+  @media screen and (max-width: 992px)
+    background-size: cover
+  .container
+    .row
+      @media screen and (max-width: 480px)
+        padding-bottom: 50px
+        padding-top: 50px
+      div.col-lg-3.col-md-3
+        padding: 0
+        &:first-child,
+        &:last-child
+          .facts-2__img
+            margin-top: 30px
+        @media screen and (max-width: 767px)
+          display: flex
+          align-items: center
+  &__img
+    width: 182px
+    height: 182px
+    border-radius: 50%
+    margin: auto
+    margin-top: 90px
+    @media screen and (max-width: 992px)
+      width: 162px
+      height: 162px
+    @media screen and (max-width: 992px)
+      width: 100px
+      height: 100px
+    @media screen and (max-width: 767px)
+      margin-top: 20px 
+    @media screen and (max-width: 640px)
+      margin-left: 50px 
+    @media screen and (max-width: 480px)
+      display: none !important
+  &__ic
+    height: 20px
+    width: 20px
+    margin-left: 60px
+    display: none
+    @media screen and (max-width: 480px)
+      display: block
+    @media screen and (max-width: 380px)
+      margin-left: 30px
+    svg
+      fill: #908f8f
+      width: 100%
+      height: 100%
+p.facts-2__text
+  width: 100%
+  text-align: center
+  display: block
+  @media screen and (max-width: 767px)
+    line-height: 100px
+    height: 100px
+    margin-top: 20px
+  @media screen and (max-width: 480px)
+    text-align: left
+    margin-left: 20px
+    line-height: 20px
+    margin-top: 10px
+    margin-bottom: 10px
+    height: 30px
+  @media screen and (max-width: 380px)
+    font-size: 0.9em
+@each $name in office, payment, postponement, working-hours
+  div.#{$name}
+    background: url(../img/main_page/facts/#{$name}.png) no-repeat
+    background-position: center
+    background-size: contain
+
+
+

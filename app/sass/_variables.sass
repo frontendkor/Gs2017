@@ -1,0 +1,68 @@
+
+$header-top_h: 66px
+$header-top__link_color: #000
+$footer_bg: #2a2929
+$footer__link_color: #cccccc
+$footer__text_color: #8e9992
+
+$nav_h: 60px
+$nav_bg: $footer_bg
+$nav__link_color: #e3e3e3
+$nav__link_hover: #ffe600
+$nav__link_active: #fecc00
+
+$margin-top: ($nav_h+$header-top_h)
+
+
+$nav_responsive_w: 440px
+$nav_responsive_h: calc(100vh - #{$margin-top})
+$nav__link_h: 57px
+$nav_responsive_bg: rgb(51,51,51)
+$panel-1__header_bg: rgb(46,46,46)
+$nav__btn_color: $nav__link_hover
+
+$social-ic_bg: #fdcc00
+$social-ic_hover: $nav__link_hover
+$social-ic_active: #fdb300
+
+$btn_color1: $nav__link_hover
+$btn_color2: #fff173
+
+
+@mixin Title-main
+  line-height: 60px
+  font-size: 40px
+  font-weight: 500
+  width: 90%
+  @media screen and (max-width: 480px)
+    font-size: 36px
+
+
+@mixin Title
+  font-size: 36px
+  font-weight: 100
+  @media screen and (max-width: 480px)
+    font-size: 32px
+    width: 90%
+    display: block
+    margin: auto
+    margin-bottom: 20px
+    margin-top: 20px
+
+
+@mixin Btn_yellow
+  background: linear-gradient(to top, $btn_color1 50%, $btn_color2 50%)
+  display: block
+  text-align: center
+  height: 55px
+  line-height: 55px
+  font-family: 'robotomedium', Arial, Helvetica, sans-serif
+  font-size: 18px
+  border-radius: 5px
+  color: #000
+  &:hover
+    background: linear-gradient(to top, $btn_color2 50%, $btn_color1 50%)
+
+  
+@mixin Btn_black
+  background: linear-gradient(to bottom, #333333 0%, #333333 50%, #000000 51%, #000000 100%)

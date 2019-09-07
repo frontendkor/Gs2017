@@ -1,0 +1,179 @@
+.navigation__container
+  @media screen and (max-width: 1200px)
+    display: none
+.nav-top_sticky
+  position: fixed !important
+  top: 0
+
+a.nav-top__logo
+  display: block
+  height: $nav_h
+  background: url(../img/logo.png) no-repeat
+  background-position-y: center
+  background-size: 100% auto
+  @media screen and (max-width: 576px)
+    display: none
+
+.nav-top
+  background: $nav_bg
+  height: $nav_h
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4)
+  z-index: 1008
+  position: relative
+  width: 100%
+  .nav-top__grid
+    position: relative
+  &__logo-container
+    @media screen and (max-width: 576px)
+      display: none
+  &__btn-container
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    height: $nav_h
+    @media screen and (max-width: 1200px)
+      position: absolute
+      right: 0
+    @media screen and (max-width: 480px)
+      justify-content: flex-start
+  &__btn
+    display: inline-block
+    text-align: center
+    width: 100%
+    max-width: 170px
+    min-width: 155px
+    line-height: 34px
+    color: $nav__link_hover
+    border: solid 2px $nav__link_hover
+    border-radius: 4px
+    transition: all 0.3s
+    &:hover
+      background: $nav__link_hover
+      color: #000
+    @media screen and (max-width: 1200px)
+      margin-right: 100px
+    @media screen and (max-width: 480px)
+      margin-left: 15px
+    
+      
+      
+/* Style Nav-Top tah-btn */
+.nav-top__tah-btn
+  width: 40px
+  height: 40px
+  position: absolute
+  top: 10px
+  right: 15px
+  display: none
+  cursor: pointer
+  @media screen and (max-width: 1200px)
+    display: block
+  @media screen and (max-width: 310px) 
+    left: 210px
+  .tah-btn__items
+    width: 100%
+    height: 2px
+    background: $nav__link_hover
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    &:before,
+    &:after
+      content: " "
+      display: block
+      width: 100%
+      height: 2px
+      background: $nav__link_hover
+      position: absolute
+      transition: all .20s
+    &:before
+      bottom: 12px
+    &:after
+      top: 12px
+  &_active
+    .tah-btn__items
+      background: transparent
+      &:before
+        transform: rotate(45deg)
+        bottom: 0
+      &:after
+        transform: rotate(-45deg)
+        top: 0
+        
+        
+/* Style Nav-Top nav */
+.nav-top nav
+  ul
+    display: flex 
+    padding: 0px !important
+    margin-top: 0
+    margin-bottom: 0
+    li 
+      margin-left: 16px
+      margin-right: 16px
+      a 
+        display: block
+        color: $nav__link_color
+        height: $nav_h
+        line-height: $nav_h
+        position: relative
+        border-bottom: solid 4px transparent
+        transition: all 0.2s
+        &:hover
+          color: $nav__link_hover
+          border-bottom-color: $nav__link_hover
+        &:active 
+          color: $nav__link_active
+          border-bottom-color: $nav__link_active
+      .link-prise
+        font-family: 'robotobold', Arial, Helvetica, sans-serif
+      .link-nav-drop 
+        display: flex
+        align-items: center
+        .link-nav-drop__ic
+          margin-left: 5px
+          height: 100%
+          width: 13px
+          position: relative
+          svg
+            fill: $nav__link_color
+            position: absolute 
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
+  .nav-drop
+    position: absolute
+    top: 0
+    background: $nav_bg
+    display: none
+    opacity: 0
+    flex-direction: column
+    align-items: stretch
+    padding-top: 20px !important
+    padding-bottom: 20px !important
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .4)
+    transition: all 0.4s
+    z-index: 1005
+    li 
+      a    
+        height: 30px
+        line-height: 30px
+        padding-left: 16px
+        padding-right: 16px
+        &:hover
+          border-bottom-color: transparent
+  .nav-drop_open
+      display: block 
+
+
+.nav-top nav ul li a.active
+  color: $nav__link_active
+  .link-nav-drop__ic
+    svg
+      fill: $nav__link_active 
+

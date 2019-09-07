@@ -1,0 +1,147 @@
+.job-application-modal__container
+  position: fixed
+  width: 100%
+  min-width: 320px
+  height: 100%
+  z-index: 88888888
+  top: 0
+  overflow-y: auto
+  background: rgba(0, 0, 0, 0.4)
+  display: none
+  
+  
+.job-application-modal
+  &__close
+    width: 32px
+    height: 32px
+    cursor: pointer
+    position: absolute
+    right: 25px
+    top: 25px
+    &:before, &:after 
+      position: absolute
+      left: 15px
+      content: ' '
+      height: 25px
+      width: 2px
+      background-color: $footer__link_color
+    &:before
+      transform: rotate(45deg)
+    &:after 
+      transform: rotate(-45deg)
+  &__overflay
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+  &__content
+    background: #fff
+    width: 50%
+    max-width: 655px
+    margin: auto
+    z-index: 77
+    position: relative
+    padding-bottom: 50px
+    padding-top: 50px
+    margin-top: -50px
+    margin-bottom: 70px
+    border-radius: 5px
+    @media screen and( max-width: 992px)
+      width: 90%
+    p 
+      width: 70%
+      text-align: center
+      display: block
+      margin: auto
+      margin-bottom: 30px
+  &__title
+    width: 100%
+    text-align: center
+    font-size: 2.7em
+    line-height: 45px
+    @media screen and( max-width: 520px)
+      font-size: 1.7em
+      line-height: 25px
+  form
+    width: 80%
+    display: block
+    margin: auto
+    display: flex
+    flex-direction: column
+    div
+      display: flex
+      flex-direction: row
+      @media screen and( max-width: 640px)
+        flex-direction: column
+    input[type=text]
+      width: 100%
+      height: 50px
+      line-height: 50px
+      margin-bottom: 25px
+      border-radius: 2px
+      font-family: 'robotoregular', Arial, Helvetica, sans-serif
+      font-size: 16px
+      color: black
+      padding: 0 10px
+      box-sizing: border-box
+      outline: none
+      border: 2px solid $footer__link_color
+      &:focus
+        border: 2px solid $nav__link_hover
+  button
+      @include Btn_yellow
+      border: none
+      cursor: pointer
+      width: 100%
+      max-width: 230px
+      margin: auto
+      margin-top: 20px
+      z-index: 33
+      
+      
+#job-application-modal__citizenship
+  height: 50px
+  line-height: 50px
+  margin-bottom: 25px
+  border-radius: 2px
+  font-family: 'robotoregular', Arial, Helvetica, sans-serif
+  font-size: 16px
+  text-indent: 0 10px
+  box-sizing: border-box
+  outline: none
+  border: 2px solid $footer__link_color
+  color: #757577
+  &:focus
+    border: 2px solid $nav__link_hover
+  
+  
+#job-application-modal__year-of-birth
+  margin-left: 20px
+  @media screen and( max-width: 640px)
+    margin-left: 0
+    
+    
+    
+.surname__error-text, .name__error-text, .middle-name__error-text, .user-phone__error-text, .deal-checkbox2__error-text
+  color: #f56649 
+  font-size: 0.7em
+  position: absolute
+  bottom: 5px
+  left: 0
+  
+
+.deal-checkbox2__error-text
+  top: 0
+  width: 100%
+  text-align: center
+  line-height: 1em
+
+.deal-checkbox
+  flex-direction: row !important
+  
+  
+  
+.surname, .name, .cont
+  position: relative
+  
+  

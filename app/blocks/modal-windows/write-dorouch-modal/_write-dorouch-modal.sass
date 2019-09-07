@@ -1,0 +1,200 @@
+.write-director-modal__container
+  position: fixed
+  width: 100%
+  min-width: 320px
+  height: 100%
+  z-index: 88888888
+  top: 0
+  overflow-y: auto
+  background: rgba(0, 0, 0, 0.4)
+  display: none
+  
+  
+.write-director-modal
+  &__close
+    width: 32px
+    height: 32px
+    cursor: pointer
+    position: absolute
+    right: 25px
+    top: 25px
+    &:before, &:after 
+      position: absolute
+      left: 15px
+      content: ' '
+      height: 25px
+      width: 2px
+      background-color: $footer__link_color
+    &:before
+      transform: rotate(45deg)
+    &:after 
+      transform: rotate(-45deg)
+  &__overflay
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+  &__content
+    background: #fff
+    width: 50%
+    max-width: 655px
+    margin: auto
+    z-index: 77
+    position: relative
+    padding-bottom: 50px
+    padding-top: 50px
+    margin-top: -50px
+    margin-bottom: 70px
+    border-radius: 5px
+    @media screen and( max-width: 992px)
+      width: 90%
+    p 
+      width: 70%
+      text-align: center
+      display: block
+      margin: auto
+      margin-bottom: 30px
+  &__title
+    width: 100%
+    text-align: center
+    font-size: 2.7em
+    line-height: 45px
+    @media screen and( max-width: 520px)
+      font-size: 1.7em
+      line-height: 25px
+  form
+    width: 80%
+    display: block
+    margin: auto
+    position: relative
+    button
+      @include Btn_yellow
+      border: none
+      cursor: pointer
+      width: 100%
+      max-width: 230px
+      margin: auto
+      margin-top: 20px
+    .fieldset
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      padding: 0
+      border: none
+      @media screen and( max-width: 640px)
+        flex-direction: column
+      div
+        position: relative
+    #write-director-modal__message
+      textarea
+        height: 220px
+        display: block
+        width: 100%
+        font-family: 'robotoregular', Arial, Helvetica, sans-serif
+        font-size: 16px
+        color: black
+        padding: 20px
+        border-radius: 2px
+        outline: none
+        border: 2px solid $footer__link_color
+        &:focus
+          border: 2px solid $nav__link_hover
+    input[type=text], input[type=email]
+      width: 100%
+      height: 50px
+      line-height: 50px
+      margin-bottom: 25px
+      border-radius: 2px
+      font-family: 'robotoregular', Arial, Helvetica, sans-serif
+      font-size: 16px
+      color: black
+      padding: 0 10px
+      box-sizing: border-box
+      outline: none
+      border: 2px solid $footer__link_color
+      &:focus
+        border: 2px solid $nav__link_hover
+    
+      
+    
+#write-director-modal__mail
+    width: 48%
+    @media screen and( max-width: 640px)
+      width: 100%
+    .error-text
+      top: 50px
+      left: 0
+#write-director-modal__phone
+    width: 48%
+    @media screen and( max-width: 640px)
+      width: 100%
+#write-director-modal__message
+  position: relative
+  .error-text
+    bottom: -15px
+    left: 0
+  
+    
+.deal-checkbox
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 40px
+  position: relative
+  @media screen and( max-width: 470px)
+    justify-content: flex-start
+  input[type="checkbox"]
+    opacity: 0
+    position: absolute
+    &:checked+i:before
+      transform: scale(1);
+  i 
+    display: inline-block
+    margin-right: 10px
+    width: 20px
+    height: 20px
+    border: solid 2px $footer__link_color
+    position: relative
+    cursor: pointer
+    border-radius: 3px
+    &.error
+      border: solid 2px #f56649 
+    &:before
+      content: ""
+      position: absolute
+      left: -2px
+      right: -2px
+      top: -2px
+      bottom: -2px
+      background: #333333 url(../img/check-ic.png) no-repeat center
+      background-size: 80%
+      border-radius: 3px
+      transform: scale(0)
+      transition: all 0.3s
+  span
+    width: 90%
+    // padding-left: 10px
+    @media screen and( max-width: 534px)
+      font-size: 0.7em
+  span
+    @media screen and( max-width: 1144px)
+      font-size: 0.8em
+      
+      
+#write-director-modal__form>span.error-text
+  text-align: center
+  width: 100%
+      
+
+  
+      
+      
+#write-director-modal__mail, #write-director-modal__phone
+  label.error
+    bottom: 5px
+    left: 0
+
+.deal-checkbox
+  #deal-error
+    position: absolute
+    bottom: -10px

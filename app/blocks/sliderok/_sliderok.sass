@@ -1,0 +1,131 @@
+#block-for-slider 
+  width: 80%
+  margin: 0 auto
+
+
+#viewport 
+  width: 100%
+  position: relative
+  overflow: hidden
+  user-select: none
+  text-align: center
+
+
+#slidewrapper 
+  position: relative
+  width: calc(100% * 10)
+  transition: 1s
+  transition-timing-function: cubic-bezier(.67,.01,.23,1)
+
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li 
+  margin: 0
+  padding: 0
+
+
+.slide 
+  width: calc(100%/10)
+  list-style: none
+  display: inline
+  float: left
+  height: 516px
+  &:hover
+    #prev-btn 
+    left: 20px
+   
+
+
+@each $num in _1, _2, _3, _4, _5, _6, _7, _8, _9, _10
+  .slide#{$num}
+    background: url(../img/prices-service/slides/slide#{$num}.jpg) no-repeat
+    background-position: center
+    background-size: auto 100%
+
+
+.slide_7
+  background-size: auto 104%
+  @media screen and (max-width: 991px)
+    background-size: cover
+
+#prev-btn, #next-btn 
+  position: absolute
+  width: 45px
+  height: 45px
+  background-color: rgba(0, 0, 0, 0.5)
+  top: calc(50% - 25px)
+  transition: all 0.2s
+
+
+#prev-btn:hover, #next-btn:hover 
+  cursor: pointer
+
+
+#prev-btn 
+  left: -50px
+  div
+    width: 16px
+    height: 16px 
+    border-left: solid 4px $footer__text_color
+    border-bottom: solid 4px $footer__text_color
+    position: absolute
+    left: 7px
+    top: 0
+    right: 0 
+    bottom: 0
+    margin: auto
+    transform: rotate(45deg)
+
+
+#next-btn 
+  right: -50px
+  div
+    width: 16px
+    height: 16px 
+    border-right: solid 4px $footer__text_color
+    border-bottom: solid 4px $footer__text_color
+    position: absolute
+    left: 0
+    top: 0
+    right: 7px 
+    bottom: 0
+    margin: auto
+    transform: rotate(-45deg)
+  
+  
+#viewport 
+  &:hover
+    #prev-btn 
+      left: 20px
+    #next-btn
+      right: 20px
+    
+
+
+#nav-btns 
+  position: absolute
+  width: 100%
+  bottom: 15px
+  padding: 0
+  margin: 0
+  text-align: center
+
+
+.slide-nav-btn 
+  position: relative
+  display: inline-block
+  list-style: none
+  width: 10px
+  height: 10px
+  background-color: rgba(255, 255, 255, 0.45)
+  border-radius: 50%
+  margin: 3px
+  
+.slide-nav-btn__active
+  background-color: rgba(255, 255, 255, 1)
+
+
+.slide-nav-btn:hover 
+  cursor: pointer
+  background-color: rgba(255, 255, 255, 0.75)
+
+  

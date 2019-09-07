@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/preloader.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/preloader.min.js"></script>
+    <link rel="shortcut icon" href="favicons.ico" type="image/x-icon">
+    <title>GS</title>
+  </head>
+  <body>
+    <div id="preloader" style="z-index: 9999999;">
+      <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-blok">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 link_nav-city__cntainer">
+                <div class="link_nav-city__ic"></div><a class="link_nav-city" href="#">Минск</a>
+              </div>
+              <div class="col-lg-6 discount__container">
+                <div class="discount">
+                  <div class="discount__icon"><span>%</span></div><a class="discount__text" href="prices.html">при заказе до <span id="discount__date">06 июня </span><span id="discount__rate">20% скидка</span></a>
+                </div>
+              </div>
+              <div class="col-lg-3 link-phone__cntaier">
+                <p>Прием заказов с 8:00 до 20:00</p><a class="link-phone" href="tel:+123456789">
+                  <div class="link-phone__icon"></div><span class="link-phone__number">(375)255-383-444</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-top">
+          <div class="container nav-top__grid">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 nav__logo-container"><a class="nav-top__logo logo" href="index.html"></a></div>
+              <div class="col-lg-7 navigation__container">
+                <nav>
+                  <ul id="nav">
+                    <li><a class="active" href="index.html">Грузчики в Минске</a></li>
+                    <li><a class="link-prise" href="prices.html"></a></li>
+                    <li><a class="link-nav-drop" href="#"> <span>Компания</span>
+                        <div class="link-nav-drop__ic">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                          </svg>
+                        </div></a>
+                      <ul class="nav-drop">
+                        <li><a class="link-about-us" href="about-us.html">О нас</a></li>
+                        <li><a class="link-service" href="service.html">Как мы работаем</a></li>
+                        <li><a class="link-thanks" href="thanks.html">Наши достижения</a></li>
+                        <li><a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="linlk-vacancies" href="vacancies.html">Вакансии</a></li>
+                    <li><a class="linlk-contacts" href="contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3 nav-top__btn-container"><a class="nav-top__btn quick-order__open" href="#">Быстрый заказ</a>
+                <div class="nav-top__tah-btn tah-btn">
+                  <div class="tah-btn__items"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_responsive">
+          <div class="nav_responsive__footer"><a href="https://vk.com">
+              <div class="vk-ic__container">
+                <svg class="vk-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+                  <path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path>
+                </svg>
+              </div></a><a href="https://www.instagram.com">
+              <div class="inst-ic__container">
+                <svg class="inst-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+              </div></a><a href="https://www.youtube.com/watch?v=gXKpK34rAT4">
+              <div class="youtube-ic__container">
+                <svg class="youtube-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+                  <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                </svg>
+              </div></a></div>
+          <nav class="panels">
+            <ul class="panel-1">
+              <li><a class="panel-1__header" href="index.html">Грузчики в Минске</a></li>
+              <li><a class="link-panel-2" href="http"> 
+                  <div class="link-panel-2__ic">
+                    <div></div>
+                  </div><span>Цены 2018</span></a></li>
+              <li><a class="link-panel-3" href="http"> 
+                  <div class="link-panel-3__ic">
+                    <div></div>
+                  </div><span>Компания</span></a></li>
+              <li><a href="vacancies.html">Вакансии</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li>
+                <p>Прием заказов с 8:00 до 20:00</p>
+              </li>
+              <li><a class="link-phone" href="tel:+375255383444">(375) 255-383-444</a></li>
+              <li>
+                <p class="commercial-offer2__open">Коммерческое предложение</p>
+              </li>
+              <li class="linlk-location__container">
+                <div>
+                  <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path fill="#e0e0e0" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                  </svg>
+                </div><a class="linlk-location" href="#">Минск</a>
+              </li>
+            </ul>
+            <ul class="panel-2">
+              <li><a class="panel-2__header" href="http">
+                  <div class="panel-2__header-ic">
+                    <div></div>
+                  </div><span> Цены</span></a></li>
+              <li><a class="pes-nav__link-tab1" href="prices.html?dataTab=1">Услуги грузчиков</a></li>
+              <li><a class="pes-nav__link-tab2" href="prices.html?dataTab=2">Квартирный переезд</a></li>
+              <li><a class="pes-nav__link-tab3" href="prices.html?dataTab=3">Офисный переезд</a></li>
+              <li><a class="pes-nav__link-tab4" href="prices.html?dataTab=4">Дачный переезд</a></li>
+              <li><a class="pes-nav__link-tab5" href="prices.html?dataTab=5">Разнорабочие</a></li>
+              <li><a class="pes-nav__link-tab6" href="prices.html?dataTab=6">Уборка и клининг</a></li>
+              <li><a class="pes-nav__link-tab7" href="prices.html?dataTab=7">Демонтажные работы</a></li>
+              <li><a class="pes-nav__link-tab8" href="prices.html?dataTab=8">Такелажные работы</a></li>
+              <li><a class="pes-nav__link-tab9" href="prices.html?dataTab=9">Вывоз мусора</a></li>
+              <li><a class="pes-nav__link-tab10" href="prices.html?dataTab=10">Уборка снега</a></li>
+              <li><a class="pes-nav__link-tab11" href="prices.html?dataTab=11">Аренда спецтехники</a></li>
+            </ul>
+            <ul class="panel-3">
+              <li><a class="panel-3__header" href="http">
+                  <div class="panel-3__header-ic">
+                    <div></div>
+                  </div><span> Компания</span></a></li>
+              <li> <a href="about-us.html">О нас</a></li>
+              <li> <a href="service.html">Как мы работаем</a></li>
+              <li> <a href="thanks.html">Наши достижения</a></li>
+              <li> <a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-modal"></div>
+      </header>
+      <div class="content" id="content">
+        <div id="vacancies">
+          <section id="baner-vacancies">
+            <div class="container">
+              <div class="row">
+                <ul class="nav-location">
+                  <li><a href="index.html">Главная /&#160;</a></li>
+                  <li><a href="vacancies.html">Вакансии</a></li>
+                </ul>
+                <h1>Начни зарабатывать  <span class="replaceable">вместе с Грузчиков-Сервис</span><span class="substitution">с Грузчиков-Сервис</span></h1>
+                <ul class="advantages-of-work">
+                  <li> 
+                    <div class="check-ic"></div><span>Ежедневные выплаты</span>
+                  </li>
+                  <li> 
+                    <div class="check-ic"></div><span>Выбирай график сам</span>
+                  </li>
+                  <li> 
+                    <div class="check-ic"></div><span>Работай рядом с домом</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="vacancies-block">
+            <div class="container">
+              <div class="row">
+                <h3>Актуальные вакансии на <span id="date-today"> </span></h3>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-5" id="vacancies-tab__link">
+                  <ul class="vacancies-tab__btns"></ul>
+                </div>
+                <div class="col-lg-5 col-md-7" id="vacancies-tab__content">
+                  <div class="vacancies-tab__text">
+                    <div class="salary-experience">
+                      <div>
+                        <p class="salary-title">Уровень зарплаты</p>
+                        <p class="salary"></p>
+                      </div>
+                      <div>
+                        <p class="experience-title">Опыт работы</p>
+                        <p class="experience"></p>
+                      </div>
+                    </div>
+                    <p>Крупный оператор рабочего персонала приглашает на вакансию <span class="job-offer"> «Грузчик» </span>. Отличные условия труда, социальный пакет, регулярные выплаты без задержек. Рассматриваем соискателей на постоянную и временную занятость. Возможен гибкий график в удобное время.</p><span>Обязанности:</span>
+                    <ul class="duties"></ul><span>Условия:</span>
+                    <ul class="conditions"></ul>
+                  </div>
+                  <p class="promise">Регулярные выплаты без задержек!</p><a class="btn-worksheet" href="http">Заполнить анкету</a>
+                </div>
+                <div class="col-lg-12 vacancies-spoilers__box">
+                  <div class="vacancies-spoilers__container"></div>
+                </div>
+                <div class="col-lg-4 col-md-12 vacancies-map">
+                  <div id="map-mini"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="specialists">
+            <div class="container">
+              <div class="row">
+                <h1>Наши специалисты о работе</h1>
+                <div class="col-lg-4">
+                  <div class="specialists">
+                    <p class="specialists__name">Николай</p><span>33 лет, грузчик</span><img src="img/vacancies/workers/worker_vacancy_01.jpg" alt="img">
+                    <p>«Мне нужно много зарабатывать. Даже в дни, когда мало заказов, я получаю от 2000 руб/день. Клиенты часто дают еще и чаевые.»</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="specialists">
+                    <p class="specialists__name">Вячеслав</p><span>29 лет, грузчик</span><img src="img/vacancies/workers/worker_vacancy_02.jpg" alt="img">
+                    <p>«Я люблю работу в Грузчиков-Сервис за гибкий график. Можно работать от 4 часов в день, хоть один день в неделю, хоть каждый день.»</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="specialists">
+                    <p class="specialists__name">Семён</p><span>35 лет, грузчик</span><img src="img/vacancies/workers/worker_vacancy_03.jpg" alt="img">
+                    <p>«Главное, что платят вовремя. Отработал - получил. Почти всегда получаю зарплату день в день, хотя на больших заказах есть небольшая отсрочка в неделю.»</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><!--include blocks/map/map.pug -->
+          <section id="clients-logo">
+            <div class="container">
+              <div class="row">
+                <h1>Более 100 ключевых клиентов с 2010 года</h1>
+                <div class="line1-logos">
+                  <div class="biz-line-logo"></div>
+                  <div class="mts-logo"></div>
+                  <div class="gazprom-logo"></div>
+                  <div class="vtb24-logo"></div>
+                  <div class="magnit-logo"></div>
+                  <div class="add-rostelecom-logo"></div>
+                </div>
+                <div class="line2-logos">
+                  <div class="rostelecom-logo"></div>
+                  <div class="megafon-logo"></div>
+                  <div class="rzd-logo"></div>
+                  <div class="sberbank-logo"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="call-back-block">
+            <div class="call-back-block_consultant-photo"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 offset-lg-6 offset-md-6 call-back-block__content">
+                  <h1>Получите бесплатную консультацию за 30 секунд</h1>
+                  <p>Позвоните нам прямо сейчас и узнайте все интересующие вас подробности.</p>
+                  <p class="call-back-time">с 8:00 до 20:00, пн - пт</p><a href="tel:+375255383444">+(375) 255-383-444</a>
+                  <form class="form-phone">
+                    <input type="text" placeholder="+(375) 255-383-444" name="phone" id="call-back__user-phone" required>
+                    <button type="submit" id="call-back__submit">Заказать звонок</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer__content col-lg-5">
+              <div class="footer__logo logo"></div>
+              <div class="communication">
+                <div class="communication__ic"></div>
+                <div class="communication__link"><a class="write-director-modal__open" href="#">Написать директору</a></div>
+              </div><a class="footer__link-phone" href="tel:+375255383464">+(375)255-383-444</a>
+              <p class="footer__working-hours">
+                Работаем круглосуточно! <br>
+                Прием заказов: с 8:00 до 20:00 <br>
+                Бухгалтерия: с 10:00 до 18:00 <br>
+              </p><a class="footer__link-email" href="mailto:mail@gmail.com">mail@gmail.com</a>
+              <p class="footer__address">195112 г. Минск, улица Лобанка 19, офис 2</p>
+              <div class="footer__social-icon"></div>
+              <p class="footer__cop">&#169; ООО "ГРУЗЧИКОВ-СЕРВИС БЕЛ" 2010–2018 <br></p><a href="#">Политика конфиденциальности. <br></a><span>Информация на данном сайте носит информационный характер и не является офертой. ст. 437 ч. 1 ГК РФ.</span>
+            </div>
+            <div class="col-lg-7 footer__nav">
+              <div class="nav-1">
+                <h3>Услуги и цены 2018</h3>
+                <ul> 
+                  <li><a href="prices.html?dataTab=1">Услуги грузчиков</a></li>
+                  <li><a href="prices.html?dataTab=2">Квартирный переезд</a></li>
+                  <li><a href="prices.html?dataTab=3">Офисный переезд</a></li>
+                  <li><a href="prices.html?dataTab=4">Дачный переезд</a></li>
+                  <li><a href="prices.html?dataTab=5">Разнорабочие</a></li>
+                  <li><a href="prices.html?dataTab=6">Уборка и клининг</a></li>
+                  <li><a href="prices.html?dataTab=7">Демонтажные работы</a></li>
+                  <li><a href="prices.html?dataTab=8">Такелажные работы</a></li>
+                  <li><a href="prices.html?dataTab=9">Вывоз мусора</a></li>
+                  <li><a href="prices.html?dataTab=10">Уборка снега</a></li>
+                  <li><a href="prices.html?dataTab=11">Аренда спецтехники</a></li>
+                </ul>
+              </div>
+              <div class="nav-2">
+                <h3>Компания</h3>
+                <ul> 
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="service.html">Как мыработаем</a></li>
+                  <li><a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+                  <li><a href="vacancies.html"> 
+                      <h3>Вакансии</h3></a></li>
+                  <li><a href="contacts.html"> 
+                      <h3>Контакты</h3></a></li>
+                </ul>
+              </div>
+              <div class="nav-3">
+                <h3>Скачать</h3>
+                <div class="treaty">
+                  <div class="treaty__ic"></div>
+                  <div class="treaty__link">
+                    <p>Договор </p><a href="img/logo.png" download="">doc</a><a href="img/logo.png" download="">pdf</a>
+                  </div>
+                </div>
+                <div class="act">
+                  <div class="act__ic"></div>
+                  <div class="act__link">
+                    <p>Акт </p><a href="img/logo.png" download="">doc</a><a href="img/logo.png" download="">pdf</a>
+                  </div>
+                </div>
+                <div class="logotip">
+                  <div class="logotip__ic"></div>
+                  <div class="logotip__link">
+                    <p>Логотип </p><a href="img/logo.png" download="">eps</a><a href="img/logo.png" download="">cdr</a><a href="img/logo.png" download="">png</a>
+                  </div>
+                </div>
+                <div class="communication">
+                  <div class="communication__ic"></div>
+                  <div class="communication__link"><a class="write-director-modal__open" href="#">Написать директору</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="quick-order-modal__container">
+        <div class="quick-order-modal" id="quick-order-modal">
+          <div class="quick-order-modal__overlay"></div>
+          <div class="quick-order-modal__content">
+            <div class="quick-order-modal__text">
+              <p>95</p>
+              <p><span>%</span> клиентов <br>заказывают <br>по телефону</p>
+            </div>
+            <div class="quick-order-modal__form">
+              <div class="quick-order-modal_close"></div>
+              <p>Оставьте ваш номер телефона, мы перезвоним</p>
+              <form id="quick-order-modal__form">
+                <input type="text" placeholder="+(375) 255-383-444" required="" name="phone" id="quick-order__user-phone">
+                <button type="submit" id="quick-order__btn">Заказать</button>
+              </form>
+              <div class="quick-order-modal__tel">Или позвоните <br> +(375) 255-383-444</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commercial-offer-modal__container">
+        <div class="commercial-offer-modal">
+          <div class="commercial-offer-modal__overlay"></div>
+          <div class="commercial-offer-modal__content">
+            <div class="commercial-offer-modal_open">
+              <p style="white-space:nowrap;">Комерческое предложение</p>
+            </div>
+            <div class="commercial-offer-modal_close"></div>
+            <form id="commercial-offer-modal__form">
+              <input type="text" placeholder="ИНН" name="inn">
+              <input type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer__user-phone">
+              <input type="email" placeholder="mail@mail.ru" name="mail" id="commercial-offer__mail"><span class="error-text"></span>
+              <button type="submit" id="call-back__btn">Получить</button>
+              <p class="error-text"> </p>
+            </form>
+            <div class="commercial-offer-modal__text">
+              <p>Индивидуальное<br class="commercial-offer-modal__br"> коммерческое<br class="commercial-offer-modal__br"> предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img"></p><img class="commercial-offer-modal__img" src="img/offer_bg.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commercial-offer-modal2__container">
+        <div class="commercial-offer-modal2">
+          <div class="commercial-offer-modal2__overlay"></div>
+          <div class="commercial-offer-modal2__content">
+            <div class="commercial-offer-modal2_close"></div>
+            <div class="commercial-offer-modal2__text">
+              <p>Индивидуальное коммерческое предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img"></p>
+            </div>
+            <form id="commercial-offer-modal2__form">
+              <input type="text" placeholder="ИНН">
+              <input type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer2__user-phone">
+              <input type="email" placeholder="mail@mail.ru" id="commercial-offer2__mail">
+              <button type="submit" id="commercial-offer__btn">Получить</button>
+              <p class="error-text"> </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="write-director-modal__container">
+        <div class="write-director-modal">
+          <div class="write-director-modal__overflay"></div>
+          <div class="write-director-modal__content">
+            <div class="write-director-modal__close"></div>
+            <p class="write-director-modal__title">Написать директору</p>
+            <p>Можете нас похвалить или поругать, дать рекомендации или задать вопрос</p>
+            <form id="write-director-modal__form">
+              <div class="fieldset">
+                <div id="write-director-modal__mail">
+                  <input type="text" placeholder="mail@mail.ru" name="email"><span class="error-text"></span>
+                </div>
+                <div id="write-director-modal__phone">
+                  <input type="text" placeholder="+(375) 255-383-444" name="phone">
+                </div>
+              </div>
+              <div id="write-director-modal__message">
+                <textarea placeholder="Ваше сообщение" name="message"></textarea><span class="error-text"></span>
+              </div>
+              <div class="deal-checkbox">
+                <label>
+                  <input type="checkbox" id="deal-checkbox"><i></i>
+                </label>
+                <label><span>Я согласен на обработку моих персональных данных</span></label>
+              </div><span class="error-text"></span>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="job-application-modal__container">
+        <div class="job-application-modal">
+          <div class="job-application-modal__overflay"></div>
+          <div class="job-application-modal__content">
+            <div class="job-application-modal__close"></div>
+            <p class="job-application-modal__title">Заполните анкету</p>
+            <p>Фамилия Имя Отчество и телефон обязательны для заполнения</p>
+            <form class="job-application-modal__form">
+              <div class="surname">
+                <input type="text" placeholder="Фамилия" id="job-application-modal__surname" name="surname"><span class="surname__error-text"></span>
+              </div>
+              <div class="name">
+                <input type="text" placeholder="Имя" id="job-application-modal__name" name="name"><span class="name__error-text"></span>
+              </div>
+              <div class="cont">
+                <input type="text" placeholder="Отчество" id="job-application-modal__middle-name"><span class="middle-name__error-text"></span>
+              </div>
+              <div class="cont">
+                <input type="text" placeholder="+(375) 255-383-444" name="phone" id="job-application-modal__user-phone"><span class="user-phone__error-text"></span>
+              </div>
+              <div>
+                <select class="citizenship" id="job-application-modal__citizenship">
+                  <option>Гражданство</option>
+                  <option>Беларусь</option>
+                  <option>Россия</option>
+                  <option>Украина</option>
+                  <option>Китай</option>
+                  <option>Другое</option>
+                </select>
+                <input type="text" placeholder="Дата рождения" id="job-application-modal__year-of-birth">
+              </div>
+              <div class="deal-checkbox">
+                <label>
+                  <input type="checkbox" id="deal-checkbox2" checked><i></i>
+                </label>
+                <label><span>Я согласен на обработку моих персональных данных</span></label>
+              </div>
+              <div class="cont"><span class="deal-checkbox2__error-text"></span>
+                <button type="submit" id="job-application-modal__btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="complete-modal">
+        <div class="complete-modal__content">
+          <p class="complete-modal__title">Мы скоро с вами свяжемся</p>
+          <p>Спасибо за проявленный интерес к компании <br> Грузчиков-Сервис</p>
+          <button id="complete-modal__btn">Закрыть</button>
+        </div>
+      </div>
+      <script src="js/libs.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.min.js"></script>
+      <script src="content/vacancies/vacancies.min.js"></script>
+    </div>
+  </body>
+</html>

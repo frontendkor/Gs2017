@@ -1,0 +1,156 @@
+#call-back-block
+  background: #f6f6f6 url(../img/call-back-block/call-back_bg.png) no-repeat
+  background-position: bottom center
+  position: relative
+  
+.call-back-block_consultant-photo
+  position: absolute
+  height: 107%
+  width: 100%
+  left: 0
+  bottom: 0
+  @media screen and (max-width: 767px)
+    display: none
+  
+  
+  
+.call-back-block__content
+  text-align: left
+  @media screen and (max-width: 480px)
+    padding-top: 50px
+  h1 
+    @include Title
+    margin-top: 145px
+    margin-bottom: 15px
+    @media screen and (max-width: 767px)
+      margin-top: 70px
+    @media screen and (max-width: 575px)
+      display: block
+      width: 80%
+      margin: auto
+      text-align: center
+      margin-top: 50px
+      margin-bottom: 50px
+  p 
+    padding: 0
+    margin: 0
+    @media screen and (max-width: 575px)
+      display: block
+      width: 90%
+      margin: auto
+      text-align: center
+  p.call-back-time
+    font-size: 0.9em
+    margin-top: 35px
+    @media screen and (max-width: 575px)
+      margin-top: 15px
+      margin-bottom: 40px
+  a 
+    color: #000
+    font-size: 48px
+    font-family: 'robotobold'
+    margin-top: 10px
+    display: block
+    @media screen and (max-width: 1200px)
+      font-size: 36px
+    @media screen and (max-width: 992px)
+      font-size: 32px
+    @media screen and (max-width: 575px)
+      text-align: center
+      font-size: 30px
+      margin-bottom: 40px
+  form
+    margin-top: 20px
+    margin-bottom: 95px
+    position: relative
+    display: flex
+    align-items: center
+    @media screen and (max-width: 575px)
+      width: 200px
+      margin: auto
+      margin-bottom: 90px
+      button, input
+        width: 100%
+        text-align: center
+    button
+      @include Btn_yellow
+      border: none
+      cursor: pointer
+      width: 200px
+      outline: 0 
+      z-index: 556
+      position: relative
+    input
+      width: 100%
+      max-width: 195px
+      position: absolute
+      height: 50px
+      line-height: 50px
+      border: 2px solid $footer__link_color
+      font-family: 'robotoregular'
+      font-size: 16px
+      color: black
+      padding: 0 10px
+      box-sizing: border-box
+      outline: none
+      top: 0
+      &:focus
+        border: 2px solid $nav__link_hover
+        
+      
+      
+      
+      
+      
+/* Style call-back-block .consultant photo ==================================================================================*/ 
+        
+
+
+
+#content-main, #vacancies
+  #call-back-block
+    div.call-back-block_consultant-photo
+      background: url(../img/call-back-block/consultant1.png) no-repeat
+      background-position: left -90px bottom 
+      @media screen and (max-width: 1200px)
+        background-position: left -200px bottom
+        background-size: auto 100% 
+      @media screen and (max-width: 1050px)
+        background-position: left -240px bottom
+        background-size: auto 90% 
+      @media screen and (max-width: 880px)
+        background-size: auto 85%
+        
+        
+#prices-service
+  #call-back-block
+    div.call-back-block_consultant-photo
+      background: url(../img/call-back-block/consultant2.png) no-repeat
+      background-position: left -100px bottom -30px
+      @media screen and (max-width: 1100px)
+        background-position: left -190px bottom 0px
+      @media screen and (max-width: 870px)
+        background-position: left -250px bottom 0px
+
+        
+        
+#service
+  #call-back-block
+    div.call-back-block_consultant-photo
+      background: url(../img/call-back-block/consultant3.png) no-repeat
+      background-position: left 150px bottom 
+      @media screen and (max-width: 1200px)
+        background-position: left 0px bottom 0px
+      @media screen and (max-width: 900px)
+        background-position: left -30px bottom 0px
+        
+        
+#about-us
+  #call-back-block
+    div.call-back-block_consultant-photo
+      background: url(../img/call-back-block/consultant4.png) no-repeat
+      background-position: left 70px top
+      @media screen and (max-width: 1200px)
+        background-position: left 0px bottom 0px
+        
+        

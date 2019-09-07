@@ -1,0 +1,45 @@
+
+<div class="job-application-modal__container">
+  <div class="job-application-modal">
+    <div class="job-application-modal__overflay"></div>
+    <div class="job-application-modal__content">
+      <div class="job-application-modal__close"></div>
+      <p class="job-application-modal__title">Заполните анкету</p>
+      <p>Фамилия Имя Отчество и телефон обязательны для заполнения</p>
+      <form class="job-application-modal__form">
+        <div class="surname">
+          <input type="text" placeholder="Фамилия" id="job-application-modal__surname" name="surname"/><span class="surname__error-text"></span>
+        </div>
+        <div class="name">
+          <input type="text" placeholder="Имя" id="job-application-modal__name" name="name"/><span class="name__error-text"></span>
+        </div>
+        <div class="cont">
+          <input type="text" placeholder="Отчество" id="job-application-modal__middle-name"/><span class="middle-name__error-text"></span>
+        </div>
+        <div class="cont">
+          <input type="text" placeholder="+(375) 255-383-444" name="phone" id="job-application-modal__user-phone"/><span class="user-phone__error-text"></span>
+        </div>
+        <div>
+          <select class="citizenship" id="job-application-modal__citizenship">
+            <option>Гражданство</option>
+            <option>Беларусь</option>
+            <option>Россия</option>
+            <option>Украина</option>
+            <option>Китай</option>
+            <option>Другое</option>
+          </select>
+          <input type="text" placeholder="Дата рождения" id="job-application-modal__year-of-birth"/>
+        </div>
+        <div class="deal-checkbox">
+          <label>
+            <input type="checkbox" id="deal-checkbox2" checked="checked"/><i></i>
+          </label>
+          <label><span>Я согласен на обработку моих персональных данных</span></label>
+        </div>
+        <div class="cont"><span class="deal-checkbox2__error-text"></span>
+          <button type="submit" id="job-application-modal__btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

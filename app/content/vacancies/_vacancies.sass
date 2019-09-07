@@ -1,0 +1,286 @@
+/* Style Baner ==================================================================================*/
+#baner-vacancies
+  background: url(../img/vacancies/baner-vacancies_bg.jpg) no-repeat
+  background-position: right top
+  background-size: cover
+  width: 100%
+  @media screen and (max-width: 1200px)
+    background-position: right -200px top
+  @media screen and (max-width: 768px)
+    background-position: left top
+    .nav-location
+        margin-top: 70px
+  h1
+    padding-left: 15px
+    width: 70%
+    color: #fff
+    font-family: 'robotolight', Arial, Helvetica, sans-serif
+    font-size: 58px
+    font-weight: 100
+    margin-top: 20px
+    margin-bottom: 20px
+    .substitution
+      display: none
+    @media screen and (max-width: 1200px)
+      font-size: 52px
+      width: 80%
+    @media screen and (max-width: 991px)
+      font-size: 46px
+      margin-top: 5px
+      width: 90%
+      margin-bottom: 0
+      span
+        display: block
+        width: 100%
+    @media screen and (max-width: 768px)
+      text-align: center
+      display: block
+      margin: auto
+      margin-top: 60px
+      span
+        font-size: 36px
+    @media screen and (max-width: 548px)
+      font-size: 36px
+      .replaceable
+        display: none
+      .substitution
+        display: block
+  ul.advantages-of-work
+    width: 100%
+    color: #fff
+    padding: 15px
+    margin-bottom: 70px
+    @media screen and (max-width: 768px)
+      width: 280px
+      margin: auto
+      margin-top: 60px
+      margin-bottom: 60px
+    li
+      display: flex
+      align-items: center
+      .check-ic
+        @include sprite($check-ic)
+      span
+        font-size: 18px
+        margin-left: 15px
+        line-height: 40px
+  
+  
+/* Style Vacancies-tab ==============================================================================*/
+#vacancies-block
+  h3
+    margin-bottom: 45px
+    margin-top: 70px
+    font-size: 36px
+    line-height: 48px
+    font-weight: 100
+    margin-bottom: 20px
+    margin-left: 15px
+    @media screen and (max-width: 991px)
+      text-align: center
+      width: 70%
+      margin: auto
+      margin-bottom: 50px
+      margin-top: 50px
+    @media screen and (max-width: 767px)
+      font-size: 32px
+    
+    
+#vacancies-tab__link, #vacancies-tab__content
+  @media screen and (max-width: 767px)
+    display: none
+  ul
+    padding: 0
+  li  
+    cursor: pointer
+    position: relative
+    span 
+      display: block
+      font-size: 18px
+      line-height: 48px
+      padding-left: 10px
+      width: 99%
+      transition: all 0.2s
+      font-size: 0.9em
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      &:hover
+        background: $btn_color2
+      &:before
+        content: ""
+        display: block
+        width: 30px
+        height: 15px
+        background: #fff
+        transform: rotate(60deg)
+        position: absolute
+        top: 1px
+        right: -13px
+      &:after
+        content: ""
+        display: block
+        width: 30px
+        height: 15px
+        background: #fff
+        transform: rotate(-60deg)
+        position: absolute
+        bottom: 1px
+        right:  -13px
+
+
+    
+.vacancies-tab__text, .vacancies-spoiler__text
+  @media screen and (max-width: 767px)
+    border-bottom: 2px solid #ededed
+    padding-bottom: 50px
+  .salary-experience
+    width: 100%
+    display: flex
+    border: solid 1px $footer__link_color
+    text-align: center
+    @media screen and (max-width: 767px)
+      border: none
+      border-bottom: 1px solid #ededed
+      text-align: left
+    div
+      width: 50%
+    .salary-title, .experience-title
+      color: $footer__text_color
+      @media screen and (max-width: 480px)
+        font-size: 0.8em
+    p  
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      @media screen and (max-width: 480px)
+        font-size: 0.7em
+        padding-left: 10px
+        padding-right: 10px
+        text-align: center
+  p 
+    @media screen and (max-width: 767px)
+      padding-left: 30px
+      padding-right: 30px
+    @media screen and (max-width: 480px)
+      font-size: 0.8em
+      text-align: justify
+  span
+    font-family: 'robotomedium', Arial, Helvetica, sans-serif
+    @media screen and (max-width: 767px)
+      padding-left: 30px
+      padding-right: 30px
+  ul
+    padding: 0
+    margin-top: 5px
+    @media screen and (max-width: 767px)
+      padding-left: 30px
+      padding-right: 30px
+    li  
+      padding: 2px
+      padding-right: 5px
+      &:before 
+        content: "- "
+      @media screen and (max-width: 480px)
+        font-size: 0.9em
+        list-style-type: disc
+        &:before 
+          content: ""
+      
+      
+/*Style Spoiler ===============================================*/
+.vacancies-spoilers__box
+  display: none
+  @media screen and (max-width: 768px)
+    display: block
+.vacancies-spoilers__container
+  box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.2)
+  margin-bottom: 50px
+  .vacancies-spoiler__header
+    border-bottom: 2px solid #ededed
+    padding: 0
+    padding-left: 15px
+    margin: 0
+    line-height: 54px
+    font-size: 18px
+    cursor: pointer
+    position: relative
+    display: block
+    color: #000
+    &:after
+      content: ""
+      border: 5px solid transparent
+      border-top: 5px solid #000
+      position: absolute
+      left: auto
+      right: 20px
+      top: 27px
+      margin: auto
+    
+.vacancies-spoiler__text, .vacancies-spoiler__content_open
+  display: none 
+  
+  
+.vacancies-spoiler__header_active
+  &:after
+    border: 5px solid transparent !important
+    border-bottom: 5px solid #000 !important
+    top: 20px !important
+    
+  
+.promise
+  font-family: 'robotomedium', Arial, Helvetica, sans-serif
+  @media screen and (max-width: 767px)
+    text-align: center
+  
+  
+.btn-worksheet
+  @include Btn_yellow
+  max-width: 200px
+  box-shadow: 0px 5px 21px 0px rgba(50, 50, 50, 0.49)
+  margin-bottom: 50px
+  margin-top: 30px
+  cursor: pointer
+  @media screen and (max-width: 767px)
+    margin: auto
+    
+  
+    
+    
+/* Style Specialists ============================================================================*/
+#specialists
+  background: #f6f6f6
+  h1 
+    width: 90%
+    display: block
+    margin: auto
+    margin-top: 70px
+    margin-bottom: 60px
+    text-align: center
+    font-size: 36px
+    font-weight: 100
+  .specialists
+    background: #fff
+    margin-bottom: 90px
+    padding-top: 40px
+  span, p 
+    display: block
+    width: 100%
+    text-align: center
+    margin: auto
+  p.specialists__name
+    font-size: 24px
+    margin-bottom: 10px
+    padding: 0
+  span
+    color: $footer__text_color
+  p 
+    padding: 40px
+    padding-top: 20px
+  img
+    display: block
+    margin: auto
+    margin-top: 30px
+  
+  
+
+  
+  
+  
+  

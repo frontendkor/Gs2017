@@ -1,0 +1,37 @@
+doctype html
+html(lang="ru")
+ head
+   meta(charset = 'utf-8')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+   link(rel='stylesheet', href='css/libs.min.css')
+   link(rel='stylesheet', href='css/preloader.min.css')
+   link(rel='stylesheet', href='css/main.min.css')
+   script(src="js/preloader.min.js")
+   link(rel="shortcut icon" href="favicons.ico" type="image/x-icon")
+   title GS
+ body
+   include blocks/preloader/preloader.pug
+   div.wrapper
+     header.header
+       include blocks/header-top-blok/header-top-blok.pug
+       include blocks/nav/nav.pug
+       include blocks/nav_responsive/nav_responsive.pug
+     div#content.content
+       div#vacancies
+         include content/vacancies/blocks/baner-block.pug
+         include content/vacancies/blocks/vacancies-tab.pug
+         include content/vacancies/blocks/specialists.pug
+         <!--include blocks/map/map.pug -->
+         include content/thanks/blocks/clients-logo-block.pug
+         include blocks/call-back-block/call-back-block.pug
+     footer.footer
+       include blocks/footer-block/footer-block.pug
+     include blocks/modal-windows/quick-order-modal/quick-order-modal.pug
+     include blocks/modal-windows/commercial-offer-modal/commercial-offer-modal.pug
+     include blocks/modal-windows/write-dorouch-modal/write-dorouch-modal.pug
+     include blocks/modal-windows/job-application-modal/job-application-modal.pug
+     include blocks/modal-windows/complete-modal/complete-modal.pug
+     script(src="js/libs.min.js")
+     script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU')
+     script(src="js/main.min.js")
+     script(src="content/vacancies/vacancies.min.js")

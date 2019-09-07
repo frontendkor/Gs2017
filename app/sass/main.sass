@@ -1,0 +1,129 @@
+@import "variables"
+@import "fonts"
+@import "../css/common-ic-map"
+@import "../css/footer-ic-map"  
+@import "../blocks/call-back-block/call-back-block"  
+@import "../blocks/modal-windows/quick-order-modal/quick-order-modal"  
+@import "../blocks/modal-windows/commercial-offer-modal/commercial-offer-modal"  
+@import "../blocks/modal-windows/complete-modal/complete-modal"  
+@import "../blocks/modal-windows/write-dorouch-modal/write-dorouch-modal"  
+@import "../blocks/modal-windows/job-application-modal/job-application-modal"  
+@import "../blocks/maps/map-mini/map-mini"  
+@import "../blocks/maps/map"  
+
+input:invalid
+  box-shadow: none
+       
+.error
+  border-color: #f56649 !important
+  
+  
+.error-text
+  position: absolute
+  font-size: 0.7em
+  color: #f56649
+  padding: 0
+  margin: 0
+
+/* Style .nav-location ==================================================================================*/  
+.nav-location
+    margin-top: 70px
+    margin-bottom: 0
+    padding: 0
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    width: 100% 
+    margin-left: 15px
+    z-index: 999
+    @media screen and (max-width: 768px)
+      justify-content: center
+      margin-left: 0
+    a
+      color: $footer__text_color
+      &:hover
+        color: $footer__link_color
+      @media screen and (max-width: 768px)
+        font-size: 0.8em
+
+      
+  
+  
+/* Style HTML & Body ==================================================================================*/
+.scrol_none 
+  overflow-y: hidden !important
+  
+
+
+
+/* Class Logo ==================================================================================*/
+.logo
+  background: url(../img/logo.png) no-repeat
+  background-position-y: center
+  
+  
+/* Style Wrapper ==================================================================================*/
+.wrapper 
+  display: flex
+  flex-direction: column
+  height: 100%
+  width: 100%
+  
+  
+  
+/* Style Header ==================================================================================*/
+.link-phone__icon
+  @include sprite($phone-ic)
+    
+    
+.header
+  width: 100%
+  z-index: 1010
+  position: relative
+  background: #fff
+  
+  
+/* Style Content ==================================================================================*/
+.content 
+  flex: 1 0 auto
+  overflow-x: hidden !important
+  
+  
+/* Style Header Top Block ==================================================================================*/
+@import "../blocks/header-top-blok/header-top-blok" 
+           
+/* Style Nav Top ==================================================================================*/
+@import "../blocks/nav/nav"
+
+
+/* Style Nav Responsive ==================================================================================*/
+@import "../blocks/nav_responsive/nav_responsive"
+  
+/* Style Main Page ==================================================================================*/
+@import "../content/content-main/content-main"
+@import "../blocks/thanks-block/thanks-block"
+
+/* Style Thanks Page ==================================================================================*/
+@import "../content/about-us/_about-us" 
+
+
+/* Style Thanks Page ==================================================================================*/
+@import "../content/thanks/thanks"       
+
+/* Style Prices-Service Page ==================================================================================*/
+@import "../content/prices/prices"
+@import "../blocks/sliderok/_sliderok"  
+
+/* Style Contacts ==================================================================================*/
+@import "../content/contacts/contacts"
+
+/* Style Vacancies ==================================================================================*/
+@import "../content/vacancies/vacancies"
+
+/* Style Service =====================================================================================*/
+@import "../content/service/service"
+
+
+
+/* FOOTER ============================================================================================*/
+@import "../blocks/footer-block/footer-block"

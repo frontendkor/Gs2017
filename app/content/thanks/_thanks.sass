@@ -1,0 +1,142 @@
+/* Style  Thanks page=====================================================================*/
+
+@import "../../blocks/gallery/gallery"
+
+/* Style  #baner-thanks================================================================== */
+.darken
+  background: rgba(28, 28, 28, 0.7)
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+
+#baner-thanks
+  background: url(../img/thanks/thanks-baner-bg.jpg) no-repeat
+  background-size:  cover
+  background-position: bottom center
+  position: relative
+  .baner-content
+    @media screen and (max-width: 575px)
+      padding: 20px
+  h1 
+    margin-top: 6px
+    margin-bottom: 35px
+    color: $nav__link_color
+    font-family: 'robotolight', Arial, Helvetica, sans-serif
+    font-size: 60px
+    font-weight: 100
+    @media screen and (max-width: 767px)
+      width: 80%
+      font-size: 36px
+      display: block
+      margin: auto
+      margin-top: 60px
+      margin-bottom: 30px
+      text-align: center
+  p  
+    color: $nav__link_color
+    margin-top: 0
+    margin-bottom: 148px
+    @media screen and (max-width: 767px)
+      width: 95%
+      display: block
+      margin: auto
+      margin-bottom: 60px
+      text-align: center
+  
+  
+/* Style  #clients-logo =================================================================================== */
+
+#clients-logo
+  h1
+    display: block
+    margin: auto
+    margin-top: 100px
+    margin-bottom: 50px
+    text-align: center
+    @media screen and (max-width: 560px)
+      width: 80%
+      margin-top: 80px
+      margin-bottom: 50px
+.line1-logos, .line2-logos
+  width: 100%
+.line1-logos
+  text-align: center
+  div
+    width: 17%
+    height: 75px
+    display: inline-block
+    margin: auto
+    overflow: hidden
+    position: relative
+    @media screen and (max-width: 992px)
+      width: 30% !important
+.line2-logos
+  text-align: center
+  margin-top: 20px
+  margin-bottom: 60px
+  @media screen and (max-width: 992px)
+    margin-top: 0
+  div
+    display: inline-block
+    margin: auto
+    width: 17%
+    height: 75px
+    overflow: hidden
+    @media screen and (max-width: 992px)
+      width: 30% !important
+@each $name in biz-line, mts, gazprom, vtb24, magnit, rostelecom, megafon, rzd, sberbank
+    .#{$name}-logo
+      background: url(../img/clients-logo/#{$name}-logo.png) no-repeat 
+.biz-line-logo
+  background-size: 85% auto
+  background-position: center top 1px
+  @media screen and (max-width: 992px)
+    background-size: 75% auto
+.mts-logo
+  background-size: 64% auto
+  background-position: center top 
+  @media screen and (max-width: 992px)
+    background-size: 55% auto
+.gazprom-logo
+  background-size: 72% auto
+  background-position: center top 1px 
+  @media screen and (max-width: 992px)
+    background-size: 65% auto
+.vtb24-logo
+  background-size: 73% auto
+  background-position: center top 25px
+  @media screen and (max-width: 992px)
+    background-size: 65% auto
+.magnit-logo
+  background-size: 70% auto
+  background-position: center top 7px
+  @media screen and (max-width: 992px)
+    background-size: 63% auto
+    background-position: center top 1px
+.add-rostelecom-logo
+  @media screen and (min-width: 993px)
+    display: none !important
+  @media screen and (max-width: 992px)
+    background: url(../img/clients-logo/rostelecom-logo.png) no-repeat
+    display: inline-block
+    background-size: 76% auto
+    background-position: center top 1px
+.rostelecom-logo
+  background-size: 82% auto
+  background-position: center top 1px
+  @media screen and (max-width: 992px)
+    display: none !important
+.megafon-logo
+  background-size: 87% auto
+  background-position: center top 20px
+  @media screen and (max-width: 992px)
+    background-size: 80% auto
+.rzd-logo
+  background-size: 51% auto
+  background-position: center top 27px
+  @media screen and (max-width: 992px)
+    background-size: 45% auto
+.sberbank-logo
+  background-size: 93% auto
+  background-position: center top 30px

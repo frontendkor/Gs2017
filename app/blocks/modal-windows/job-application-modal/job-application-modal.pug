@@ -1,0 +1,38 @@
+div.job-application-modal__container
+  div.job-application-modal
+    div.job-application-modal__overflay
+    div.job-application-modal__content
+      div.job-application-modal__close
+      p.job-application-modal__title Заполните анкету
+      p Фамилия Имя Отчество и телефон обязательны для заполнения
+      form.job-application-modal__form
+        div.surname
+          input(type="text" placeholder="Фамилия" id="job-application-modal__surname" name="surname")
+          span.surname__error-text
+        div.name
+          input(type="text" placeholder="Имя" id="job-application-modal__name" name="name" )
+          span.name__error-text
+        div.cont
+          input(type="text" placeholder="Отчество" id="job-application-modal__middle-name")
+          span.middle-name__error-text
+        div.cont
+          input(type="text" placeholder="+(375) 255-383-444" name="phone" id="job-application-modal__user-phone")
+          span.user-phone__error-text
+        div
+          select.citizenship(id="job-application-modal__citizenship")
+            option Гражданство
+            option Беларусь
+            option Россия
+            option Украина
+            option Китай
+            option Другое
+          input(type="text" placeholder="Дата рождения" id="job-application-modal__year-of-birth")
+        div.deal-checkbox
+          label
+            input(type="checkbox" id="deal-checkbox2" checked)
+            i
+          label
+            span Я согласен на обработку моих персональных данных
+        div.cont
+          span.deal-checkbox2__error-text
+          button(type="submit" id="job-application-modal__btn") Отправить

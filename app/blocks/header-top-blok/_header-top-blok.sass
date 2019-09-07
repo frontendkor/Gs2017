@@ -1,0 +1,70 @@
+/* Style Header Top Block =================================================================================*/
+.header__top-blok
+  height: $header-top_h
+  z-index: 1999
+  position: relative
+  background: #fff
+  .link_nav-city__cntainer
+    display: flex
+    align-items: center
+    @media screen and (max-width: 1200px)
+      display: none
+    .link_nav-city__ic
+      @include sprite($ic-place)
+    a 
+      margin-left: 10px
+      color: $header-top__link_color
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .discount
+    height: $header-top_h
+    display: flex
+    align-items: center
+    @media screen and (max-width: 1200px)
+      justify-content: center
+      &__container
+        width: 100% !important
+    a 
+      margin-left: 10px
+      color: $header-top__link_color
+      span#discount__rate
+        border-bottom: 1px solid #a3a3a3
+    &__icon
+      @include sprite($discount-ic)
+      position: relative
+      span
+        color: #fff
+        display: block
+        height: 29px
+        width: 29px
+        line-height: 29px
+        text-align: center
+  .link-phone__cntaier
+    height: $header-top_h
+    position: relative
+    display: flex
+    align-items: center
+    @media screen and (max-width: 1200px)
+      display: none
+    p
+      position: absolute
+      padding: 0
+      margin: 0
+      top: 3px
+      color: #a6a6a6
+      font-size: 0.9em
+      right: 20px
+      
+      
+      
+a.link-phone
+  display: flex
+  align-items: center
+  .link-phone__icon
+    @include sprite($phone-ic)
+  span 
+    margin-left: 10px
+    color: $header-top__link_color 
+    font-family: 'robotomedium'
+    font-size: 26px

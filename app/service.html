@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/preloader.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/preloader.min.js"></script>
+    <link rel="shortcut icon" href="favicons.ico" type="image/x-icon">
+    <title>GS</title>
+  </head>
+  <body>
+    <div id="preloader" style="z-index: 9999999;">
+      <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-blok">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 link_nav-city__cntainer">
+                <div class="link_nav-city__ic"></div><a class="link_nav-city" href="#">Минск</a>
+              </div>
+              <div class="col-lg-6 discount__container">
+                <div class="discount">
+                  <div class="discount__icon"><span>%</span></div><a class="discount__text" href="prices.html">при заказе до <span id="discount__date">06 июня </span><span id="discount__rate">20% скидка</span></a>
+                </div>
+              </div>
+              <div class="col-lg-3 link-phone__cntaier">
+                <p>Прием заказов с 8:00 до 20:00</p><a class="link-phone" href="tel:+123456789">
+                  <div class="link-phone__icon"></div><span class="link-phone__number">(375)255-383-444</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-top">
+          <div class="container nav-top__grid">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 nav__logo-container"><a class="nav-top__logo logo" href="index.html"></a></div>
+              <div class="col-lg-7 navigation__container">
+                <nav>
+                  <ul id="nav">
+                    <li><a class="active" href="index.html">Грузчики в Минске</a></li>
+                    <li><a class="link-prise" href="prices.html"></a></li>
+                    <li><a class="link-nav-drop" href="#"> <span>Компания</span>
+                        <div class="link-nav-drop__ic">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                          </svg>
+                        </div></a>
+                      <ul class="nav-drop">
+                        <li><a class="link-about-us" href="about-us.html">О нас</a></li>
+                        <li><a class="link-service" href="service.html">Как мы работаем</a></li>
+                        <li><a class="link-thanks" href="thanks.html">Наши достижения</a></li>
+                        <li><a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="linlk-vacancies" href="vacancies.html">Вакансии</a></li>
+                    <li><a class="linlk-contacts" href="contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3 nav-top__btn-container"><a class="nav-top__btn quick-order__open" href="#">Быстрый заказ</a>
+                <div class="nav-top__tah-btn tah-btn">
+                  <div class="tah-btn__items"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_responsive">
+          <div class="nav_responsive__footer"><a href="https://vk.com">
+              <div class="vk-ic__container">
+                <svg class="vk-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+                  <path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path>
+                </svg>
+              </div></a><a href="https://www.instagram.com">
+              <div class="inst-ic__container">
+                <svg class="inst-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+              </div></a><a href="https://www.youtube.com/watch?v=gXKpK34rAT4">
+              <div class="youtube-ic__container">
+                <svg class="youtube-ic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+                  <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                </svg>
+              </div></a></div>
+          <nav class="panels">
+            <ul class="panel-1">
+              <li><a class="panel-1__header" href="index.html">Грузчики в Минске</a></li>
+              <li><a class="link-panel-2" href="http"> 
+                  <div class="link-panel-2__ic">
+                    <div></div>
+                  </div><span>Цены 2018</span></a></li>
+              <li><a class="link-panel-3" href="http"> 
+                  <div class="link-panel-3__ic">
+                    <div></div>
+                  </div><span>Компания</span></a></li>
+              <li><a href="vacancies.html">Вакансии</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li>
+                <p>Прием заказов с 8:00 до 20:00</p>
+              </li>
+              <li><a class="link-phone" href="tel:+375255383444">(375) 255-383-444</a></li>
+              <li>
+                <p class="commercial-offer2__open">Коммерческое предложение</p>
+              </li>
+              <li class="linlk-location__container">
+                <div>
+                  <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path fill="#e0e0e0" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                  </svg>
+                </div><a class="linlk-location" href="#">Минск</a>
+              </li>
+            </ul>
+            <ul class="panel-2">
+              <li><a class="panel-2__header" href="http">
+                  <div class="panel-2__header-ic">
+                    <div></div>
+                  </div><span> Цены</span></a></li>
+              <li><a class="pes-nav__link-tab1" href="prices.html?dataTab=1">Услуги грузчиков</a></li>
+              <li><a class="pes-nav__link-tab2" href="prices.html?dataTab=2">Квартирный переезд</a></li>
+              <li><a class="pes-nav__link-tab3" href="prices.html?dataTab=3">Офисный переезд</a></li>
+              <li><a class="pes-nav__link-tab4" href="prices.html?dataTab=4">Дачный переезд</a></li>
+              <li><a class="pes-nav__link-tab5" href="prices.html?dataTab=5">Разнорабочие</a></li>
+              <li><a class="pes-nav__link-tab6" href="prices.html?dataTab=6">Уборка и клининг</a></li>
+              <li><a class="pes-nav__link-tab7" href="prices.html?dataTab=7">Демонтажные работы</a></li>
+              <li><a class="pes-nav__link-tab8" href="prices.html?dataTab=8">Такелажные работы</a></li>
+              <li><a class="pes-nav__link-tab9" href="prices.html?dataTab=9">Вывоз мусора</a></li>
+              <li><a class="pes-nav__link-tab10" href="prices.html?dataTab=10">Уборка снега</a></li>
+              <li><a class="pes-nav__link-tab11" href="prices.html?dataTab=11">Аренда спецтехники</a></li>
+            </ul>
+            <ul class="panel-3">
+              <li><a class="panel-3__header" href="http">
+                  <div class="panel-3__header-ic">
+                    <div></div>
+                  </div><span> Компания</span></a></li>
+              <li> <a href="about-us.html">О нас</a></li>
+              <li> <a href="service.html">Как мы работаем</a></li>
+              <li> <a href="thanks.html">Наши достижения</a></li>
+              <li> <a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-modal"></div>
+      </header>
+      <div class="content" id="content">
+        <div id="service">
+          <section class="baner_1" id="service-baner">
+            <div class="container">
+              <div class="row">
+                <ul class="nav-location">
+                  <li><a href="index.html">Компания /&#160;</a></li>
+                  <li><a href="company.html">Как мы работаем</a></li>
+                </ul>
+                <h1>Мы работаем <br/> круглосуточно</h1>
+                <div class="service-btn"><a class="company-btn service-btn-active" href="#">Я представитель компании</a><a class="private-person-btn" href="#">Я часное лицо</a></div>
+                <div class="service-btn2"><a class="company-btn service-btn-active" href="#">Компаниям</a><a class="private-person-btn" href="#">Частным лицам</a></div>
+              </div>
+            </div>
+          </section>
+          <div class="servise-time" id="servise-time">
+            <div class="container">
+              <div class="row servise-time-content">
+                <div class="col-lg-3 col-md-6 col-sm-6 servise-time-content__item">
+                  <div>
+                    <p>Принимаем заказы с 8:00 до 20:00</p><img src="img/service/square_icon_01.png" alt="img">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 servise-time-content__item">
+                  <div>
+                    <p>Выполняем заказы круглосуточно</p><img src="img/service/square_icon_02.png" alt="img">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 servise-time-content__item">
+                  <div>
+                    <p>Бухгалтерия работает с 10:00 до 18:00</p><img src="img/service/square_icon_03.png" alt="img">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 servise-time-content__item">
+                  <div>
+                    <p>Консультацияпо стоимости и скидкам с 8:00 до 20:00</p><a id="request" href="http">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section id="service-description">
+            <h1>100% гарантия качества услуг и <br/> высочайший сервис от лидера рынка в России</h1>
+            <div class="container">
+              <div class="row">
+                <div class="dotter"></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 service-description-content"><img src="img/service/icon_how_me_work_01.jpg" alt="img">
+                  <p>Заключаем договор</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 service-description-content"><img src="img/service/icon_how_me_work_02.jpg" alt="img">
+                  <p>Выставляем счет и производите оплату</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 service-description-content"><img src="img/service/icon_how_me_work_03.jpg" alt="img">
+                  <p>Рабочие приезжают в указанное время и выполняют работу</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 service-description-content"><img src="img/service/icon_how_me_work_04.jpg" alt="img">
+                  <p>Получаете пакет документов для бухгалтерии</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="service-performers">
+            <h1>Проверенные на 100% исполнители</h1>
+            <p>Мы тщательно проверяем наших работников, поэтому у нас не бывает случайных людей.</p>
+            <div class="container">
+              <div class="row">
+                <div class="service-performers__item col-lg-3 col-md-6 col-sm-6">
+                  <div class="service-performers_1"></div>
+                  <div class="service-performers__text">
+                    <p>Николай</p>
+                    <p>33 лет, грузчик</p>
+                  </div>
+                </div>
+                <div class="service-performers__item col-lg-3 col-md-6 col-sm-6">
+                  <div class="service-performers_2"></div>
+                  <div class="service-performers__text">
+                    <p>Вячеслав</p>
+                    <p>29 лет, грузчик</p>
+                  </div>
+                </div>
+                <div class="service-performers__item col-lg-3 col-md-6 col-sm-6">
+                  <ul>
+                    <li>Граждане РБ</li>
+                    <li>Трезвые</li>
+                    <li>Без нецензурной лексики</li>
+                    <li>Без опозданий</li>
+                    <li>Низкие цены</li>
+                    <li>Без судимостей</li>
+                  </ul>
+                </div>
+                <div class="service-performers__item col-lg-3 col-md-6 col-sm-6">
+                  <div class="service-performers_3"></div>
+                  <div class="service-performers__text">
+                    <p>Семён</p>
+                    <p>35лет, грузчик</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="service-execution">
+            <h1>Простой и уникальный сервис для Вашего удобства</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 slider-ipad">
+                  <div class="ipad">
+                    <div class="slider-ipad__viewport">
+                      <div class="slider-ipad__items">
+                        <div class="item1"><img src="img/service/ipad_icon_01.png" alt="img"></div>
+                        <div class="item2"><img src="img/service/ipad_icon_02.png" alt="img"></div>
+                        <div class="item3"><img src="img/service/ipad_icon_03.png" alt="img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 slider-ipad__nav">
+                  <div class="slider-ipad__text-btn slider-ipad__text-btn_active">
+                    <div class="slider-ipad__nav-ic"><img src="img/service/list-comfort-services_01.png" alt="img"></div>
+                    <p class="num-item">01</p>
+                    <p>Получаете доступ <br/><span>Менеджер присылает ссылку</span></p>
+                  </div>
+                  <div class="slider-ipad__text-btn">
+                    <div class="slider-ipad__nav-ic"><img src="img/service/list-comfort-services_02.png" alt="img"></div>
+                    <p class="num-item">02</p>
+                    <p>Заходите в кабинет<br/><span> Заходите в личный кабинет под своим логином и паролем</span></p>
+                  </div>
+                  <div class="slider-ipad__text-btn">
+                    <div class="slider-ipad__nav-ic"><img src="img/service/list-comfort-services_03.png" alt="img"></div>
+                    <p class="num-item">03</p>
+                    <p>Всё под контролем<br/> <span>Видите все транзакции, можете создавать новые заказы и тд...</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="service-payment">
+            <div class="container">
+              <div class="row">
+                <h1>Выбирайте удобный способ оплаты</h1>
+                <div class="col-lg-3 col-md-6 col-sm-6"><img src="img/service/ic_payments_01.png" alt="img">
+                  <p>Наличные </p><span>После выполнения работы</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6"><img src="img/service/ic_payments_02.png" alt="img">
+                  <p>Банковская карта </p><span>Переводом на карту физ.лица</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6"><img src="img/service/ic_payments_03.png" alt="img">
+                  <p>Безналичный расчет</p><span>Полный комплект документов</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6"><img src="img/service/ic_payments_04.png" alt="img">
+                  <p>Связной, евросеть </p><span>Удобная оплата рядом с домом</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="servise-doc">
+            <div class="container">
+              <div class="row">
+                <h1>Документы и нормативные акты</h1>
+                <div class="col-lg-6 div col-md-6 links-docs">
+                  <div class="links-docs__container">
+                    <p>Договор на оказание услуг</p>
+                    <div class="doc-ic"><img src="img/service/doc-ic.png" alt="img"><a class="doc-link" href="img/logo.png" download> Скачать договор заявки</a></div><a class="doc-link_res" href="img/logo.png" download>Договор на оказание услуг</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 div col-md-6 doc-description">
+                  <p>Условия сотрудничества между клиентом и Грузчиков-Сервис. Благодаря наработанному опыту с 2010 года, наши договора - сбалансированные, отвечающие интересам как заказчика, так и исполнителя. В нашей компании имеется штат опытных юристов, если клиенту нужна консультация по тем или иным пунктам договора.</p>
+                </div>
+                <div class="col-lg-6 div col-md-6 links-docs">
+                  <div class="links-docs__container">
+                    <p>Акт учета оказанных услуг</p>
+                    <div class="doc-ic"><img src="img/service/doc-ic.png" alt="img"><a class="doc-link" href="img/logo.png" download> Скачать aкт</a></div><a class="doc-link_res" href="img/logo.png" download>Акт учета оказанных услуг</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 div col-md-6 doc-description">
+                  <p>В акте клиент фиксирует фактический объем оказанных услуг. Клиент передает акт (оригиналы) непосредственным исполнителям заявки. Форма акта - важный документ, который может понадобиться в дальнейшем для уточнения деталей оказанной услуги.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="servise-faq">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 col-md-12 faq-tab__container">
+                  <h1>Часто задаваемые вопросы</h1>
+                  <div class="faq-manager_res"><img src="img/service/faq_manager.jpg" alt="img">
+                    <div class="faq-manager_res-text">
+                      <p>Отвечает:</p>
+                      <p class="faq-manager-name">Константин </p><span>Менеджер по работе с клиентами</span>
+                    </div>
+                  </div>
+                  <div class="faq-spoiler">
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Чем занимается компания Грузчиков-Сервис?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Грузчиков-Сервис - это крупный оператор рабочего персонала в России. Это многопрофильная динамично развивающаяся компания. Компания также выполняет грузовые перевозки по Санкт-Петербургу и всей России.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Где оставить отзыв о сотрудничестве с Грузчиков-Сервис?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Оставить отзыв можно на независимом портале Грузчиков-Сервис в Желтых страницах (yell.ru)</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Кому пожаловаться, внести предложение о работе компании или ее сотрудников?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Ваши жалобы и предложения присылайте через специальную форму внизу любой страницы на нашем сайте.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Какие работы выполняют грузчики и разнорабочие?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Весь рабочий персонал компании Грузчиков-Сервис выполняет неквалифицированные работы.</p>
+                        <ul>
+                          <li>- погрузку-разгрузку всех видов грузов, а также фур и контейнеров;</li>
+                          <li>- демонтаж всевозможных конструкций и объектов;</li>
+                          <li>- складские работы (обслуживание складов);</li>
+                          <li>- профессиональную погрузку строительного мусора;</li>
+                          <li>- такелажные работы (сейфы, банкоматы, сервера и т.п.);</li>
+                          <li>- физические работы на офисных и квартирных переездах;</li>
+                          <li>- сборку и разборку мебели.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Чем отличаются грузчики от разнорабочих?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Грузчики занимаются преимущественно погрузкой и разгрузкой. Разнорабочие выполняют более широкий спектр работ: </p>
+                        <ul>
+                          <li>- физическую уборку территорий;</li>
+                          <li>- разнообразную помощь на стройке;</li>
+                          <li>- работу со строительным мусором;</li>
+                          <li>- упаковку мебели;</li>
+                          <li>- все виды демонтажных работ;</li>
+                          <li>- работы по монтажу оборудования;</li>
+                          <li>- все остальные работы, не требующие опыта и специальных знаний.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Какие грузчики работают в Грузчиков-Сервис?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>В компании Грузчиков-Сервис работают только граждане РФ. Средний возраст грузчиков - 29-30 лет, разнорабочих 23-25 лет, бригадиров - 35-40 лет. Все грузчики имеют опыт работы с большинством распространенных грузов. Идет постоянный контроль качества выполнения работ сотрудниками компании. На такелажные работы выезжают специальные бригады.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Работаете ли Вы с компаниями по безналичному расчету?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да, работаем. Это основной вид сотрудничества с постоянными клиентами. После заключения договора мы работаем по пост-оплате. Отсрочка оплаты обсуждается индивидуально.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Где работают ваши грузчики?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Грузчики работают на любых объектах. Грузчики выполняют работы как на стационарных объектах: склады, производства, цеха, прочие предприятия; так и на мобильных объектах: сопровождают водителей, занимающихся доставкой в течение дня: продуктов, мебели, крупно бытовых товаров, компьютерной техники, строительных материалов и т.п.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как оплачивается работа грузчиков за пределами города?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>В зависимости от удаленности Вашего объекта добавляются часы подачи. Дополнительно оплачивается доставка рабочих или проезд на общественном транспорте. Обратитесь к любому менеджеру для расчета стоимости работ за городом.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как сделать заказ?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Чтобы сделать заказ позвоните по многоканальному телефону компании и оформите заявку. Для этого сообщите любому оператору: дату, время, адрес, контактный телефон, и параметры заказа. Обращаем внимание, что срочные заказы в ночное время не выполняются.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как сделать заказ, если я не знаю точного времени работ?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Заранее делайте заявку (за один день) и просите оператора забронировать рабочих. Сообщите, когда Вы позвоните, чтобы уточнить время работ</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как заказать грузчиков, если груз еще в пути?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>В зависимости от Вашей конкретной ситуации. Вы можете, например, воспользоваться срочным заказом рабочих или забронировать грузчиков на необходимый интервал времени.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как заказать выполнение погрузо-разгрузочных работ, если я нахожусь в другом городе?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Позвоните и сделайте заявку. Оператору обязательно сообщите, что Вы находитесь в другом городе. Сделайте предоплату. По итогам работы с Вами свяжется менеджер компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как изменить, отменить сделанный заказ?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Позвоните оператору и сообщите об этом.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как поступить, если я не знаю, сколько необходимо грузчиков для выполнения работы?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Оператор поможет Вам сориентироваться, если имеет место типовая ситуация. Также Вы всегда можете воспользоваться услугой оценщика.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Возможен ли срочный вызов грузчиков?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да. Если на момент Вашего запроса есть свободные рабочие, они незамедлительно выдвинутся по указанному адресу.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Возможен ли выезд оценщика для оценки стоимости проведения работ?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да. Но в некоторых случаях - это платная услуга. Узнайте подробнее у оператора.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Какие формы оплаты у вас существуют?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Наличный и безналичный расчеты.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Заключаете ли вы договор обслуживания?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да. Типовой договор и другие полезные документы можно скачать на сайте в разделе “Документы” или сделать запрос на почту.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Можно ли оплатить работы наличными?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да, можно.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Можно ли оплатить работы по безналу?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да, можно. После заключения договора.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Можно ли оплатить работы переводом на карту физ. лица после выполнения работ?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>В некоторых случаях возможно.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Предоставляете ли вы отсрочку оплаты?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да, предоставляем отсрочку. Этот вопрос обсуждается индивидуально.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Возможна ли работа без предоплаты по безналичному расчету?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да. Получите подробную информацию у оператора.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Сколько стоит заказать грузчиков?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Итоговая стоимость заказа грузчиков зависит от веса груза, количества требуемых рабочих, продолжительности рабочего времени и других параметров заказа. Уточните стоимость Вашего заказа у оператора.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как рассчитать итоговую стоимость заказа грузчиков, переезда?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Точную стоимость рассчитать невозможно. Но оператор всегда подскажет Вам ориентировочную стоимость типовых работ.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как узнать сколько по времени займет переезд квартиры?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Ориентировочную продолжительность времени квартирного переезда можно рассчитать самостоятельно или уточнить у любого оператора.<br/>Также учитывается этажность, расстояние от места остановки грузового транспорта, длина проносов, исключительные веса возможных грузов, уборка помещения, упаковочные работы, расстановка мебели и предметов интерьера согласно плану расстановки, работы с антиквариатом, удаленность мест отправления и назначения.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как рассчитать продолжительность офисного переезда?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Ориентировочную продолжительность офисного переезда можно уточнить у любого оператора.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Как узнать точную стоимость перевозки?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Узнайте точную стоимость перевозки грузов у любого оператора компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что такое почасовая оплата?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Это основной вид оплаты, предусмотренный в компании. Это значит, что оплата работы грузчиков, разнорабочих и остального персонала идет на почасовой основе, а не сдельной.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Вдруг ваши сотрудники будут работать медленно?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Компания Грузчиков-Сервис также как и ее клиенты заинтересована в быстром выполнении заказов. Грузчики работают под контролем опытных бригадиров, которые не дают сбиваться рабочему графику. Для любых грузов есть нормативы выполнения ПРР (погрузо-разгрузочных работ), утвержденные законодательством. Все рабочие соблюдают Положение об охране труда РБ.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Возможна ли сдельная оплата, а не почасовая?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Сдельная оплата возможна для некоторых типов грузов. Например, для такелажных работ часто используется в расчетах сдельная оплата. Получите подробную консультацию по данному вопросу у любого оператора компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что делать, если грузчики опаздывают?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Если грузчики опаздывают, сообщите об этом любому оператору компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что делать, если грузчики не приехали?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Таких ситуаций практически не бывает. Возможно, был указан неверный адрес или контактный телефон. Вы можете в любой момент узнать, где находятся рабочие, позвонив по многоканальному номеру телефона компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что делать, если грузчики приехали не в полном составе?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Возможно, что просто еще не все рабочие добрались до места назначения. Позвоните по телефону компании и сообщите о прибытии неполной бригады.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что делать, если грузчики что-то разбили, сломали, повредили, деформировали?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Не беспокоиться, Грузчиков-Сервис несет полную материальную отвествтенность в соответствии с условиями в заключаемых договорах. Незамедлительно сообщите о подобной ситуации любому оператору. Следуйте инструкциям сотрудника компании: составьте акт о повреждениях в присутствии рабочих, дождитесь менеджера компании или эксперта по оценке ущерба.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Что делать, если грузчики нагрубили, не выполнили работу и т.п.?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Таких ситуаций практически не бывает. Сообщите о возникновении данных ситуаций любому оператору компании.</p>
+                      </div>
+                    </div>
+                    <div class="faq-spoiler__item">
+                      <div class="faq-spoiler__header">
+                        <div class="faq-spoiler__ic"><span>?</span></div>
+                        <p>Несете ли Вы материальную ответственность за перемещаемый, перевозимый груз?</p>
+                      </div>
+                      <div class="faq-spoiler__content">
+                        <p>Да. Компания Грузчиков-Сервис несет перед своими клиентами ответственность за груз, с которым проводит любые операции. Данная обязанность закреплена в Договоре обслуживания в разделе “Права и обязанности сторон”.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 faq-manager__container">
+                  <div class="faq-manager">
+                    <p>Отвечает:</p><img src="img/service/faq_manager.jpg" alt="img">
+                    <p class="faq-manager-name">Константин </p><span>Менеджер по работе с клиентами</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="call-back-block">
+            <div class="call-back-block_consultant-photo"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 offset-lg-6 offset-md-6 call-back-block__content">
+                  <h1>Получите бесплатную консультацию за 30 секунд</h1>
+                  <p>Позвоните нам прямо сейчас и узнайте все интересующие вас подробности.</p>
+                  <p class="call-back-time">с 8:00 до 20:00, пн - пт</p><a href="tel:+375255383444">+(375) 255-383-444</a>
+                  <form class="form-phone">
+                    <input type="text" placeholder="+(375) 255-383-444" name="phone" id="call-back__user-phone" required>
+                    <button type="submit" id="call-back__submit">Заказать звонок</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer__content col-lg-5">
+              <div class="footer__logo logo"></div>
+              <div class="communication">
+                <div class="communication__ic"></div>
+                <div class="communication__link"><a class="write-director-modal__open" href="#">Написать директору</a></div>
+              </div><a class="footer__link-phone" href="tel:+375255383464">+(375)255-383-444</a>
+              <p class="footer__working-hours">
+                Работаем круглосуточно! <br>
+                Прием заказов: с 8:00 до 20:00 <br>
+                Бухгалтерия: с 10:00 до 18:00 <br>
+              </p><a class="footer__link-email" href="mailto:mail@gmail.com">mail@gmail.com</a>
+              <p class="footer__address">195112 г. Минск, улица Лобанка 19, офис 2</p>
+              <div class="footer__social-icon"></div>
+              <p class="footer__cop">&#169; ООО "ГРУЗЧИКОВ-СЕРВИС БЕЛ" 2010–2018 <br></p><a href="#">Политика конфиденциальности. <br></a><span>Информация на данном сайте носит информационный характер и не является офертой. ст. 437 ч. 1 ГК РФ.</span>
+            </div>
+            <div class="col-lg-7 footer__nav">
+              <div class="nav-1">
+                <h3>Услуги и цены 2018</h3>
+                <ul> 
+                  <li><a href="prices.html?dataTab=1">Услуги грузчиков</a></li>
+                  <li><a href="prices.html?dataTab=2">Квартирный переезд</a></li>
+                  <li><a href="prices.html?dataTab=3">Офисный переезд</a></li>
+                  <li><a href="prices.html?dataTab=4">Дачный переезд</a></li>
+                  <li><a href="prices.html?dataTab=5">Разнорабочие</a></li>
+                  <li><a href="prices.html?dataTab=6">Уборка и клининг</a></li>
+                  <li><a href="prices.html?dataTab=7">Демонтажные работы</a></li>
+                  <li><a href="prices.html?dataTab=8">Такелажные работы</a></li>
+                  <li><a href="prices.html?dataTab=9">Вывоз мусора</a></li>
+                  <li><a href="prices.html?dataTab=10">Уборка снега</a></li>
+                  <li><a href="prices.html?dataTab=11">Аренда спецтехники</a></li>
+                </ul>
+              </div>
+              <div class="nav-2">
+                <h3>Компания</h3>
+                <ul> 
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="service.html">Как мыработаем</a></li>
+                  <li><a href="https://fr.gruzchikov-service.ru/" target="_blank">Франшиза</a></li>
+                  <li><a href="vacancies.html"> 
+                      <h3>Вакансии</h3></a></li>
+                  <li><a href="contacts.html"> 
+                      <h3>Контакты</h3></a></li>
+                </ul>
+              </div>
+              <div class="nav-3">
+                <h3>Скачать</h3>
+                <div class="treaty">
+                  <div class="treaty__ic"></div>
+                  <div class="treaty__link">
+                    <p>Договор </p><a href="img/logo.png" download="">doc</a><a href="img/logo.png" download="">pdf</a>
+                  </div>
+                </div>
+                <div class="act">
+                  <div class="act__ic"></div>
+                  <div class="act__link">
+                    <p>Акт </p><a href="img/logo.png" download="">doc</a><a href="img/logo.png" download="">pdf</a>
+                  </div>
+                </div>
+                <div class="logotip">
+                  <div class="logotip__ic"></div>
+                  <div class="logotip__link">
+                    <p>Логотип </p><a href="img/logo.png" download="">eps</a><a href="img/logo.png" download="">cdr</a><a href="img/logo.png" download="">png</a>
+                  </div>
+                </div>
+                <div class="communication">
+                  <div class="communication__ic"></div>
+                  <div class="communication__link"><a class="write-director-modal__open" href="#">Написать директору</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="quick-order-modal__container">
+        <div class="quick-order-modal" id="quick-order-modal">
+          <div class="quick-order-modal__overlay"></div>
+          <div class="quick-order-modal__content">
+            <div class="quick-order-modal__text">
+              <p>95</p>
+              <p><span>%</span> клиентов <br>заказывают <br>по телефону</p>
+            </div>
+            <div class="quick-order-modal__form">
+              <div class="quick-order-modal_close"></div>
+              <p>Оставьте ваш номер телефона, мы перезвоним</p>
+              <form id="quick-order-modal__form">
+                <input type="text" placeholder="+(375) 255-383-444" required="" name="phone" id="quick-order__user-phone">
+                <button type="submit" id="quick-order__btn">Заказать</button>
+              </form>
+              <div class="quick-order-modal__tel">Или позвоните <br> +(375) 255-383-444</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commercial-offer-modal__container">
+        <div class="commercial-offer-modal">
+          <div class="commercial-offer-modal__overlay"></div>
+          <div class="commercial-offer-modal__content">
+            <div class="commercial-offer-modal_open">
+              <p style="white-space:nowrap;">Комерческое предложение</p>
+            </div>
+            <div class="commercial-offer-modal_close"></div>
+            <form id="commercial-offer-modal__form">
+              <input type="text" placeholder="ИНН" name="inn">
+              <input type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer__user-phone">
+              <input type="email" placeholder="mail@mail.ru" name="mail" id="commercial-offer__mail"><span class="error-text"></span>
+              <button type="submit" id="call-back__btn">Получить</button>
+              <p class="error-text"> </p>
+            </form>
+            <div class="commercial-offer-modal__text">
+              <p>Индивидуальное<br class="commercial-offer-modal__br"> коммерческое<br class="commercial-offer-modal__br"> предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img"></p><img class="commercial-offer-modal__img" src="img/offer_bg.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commercial-offer-modal2__container">
+        <div class="commercial-offer-modal2">
+          <div class="commercial-offer-modal2__overlay"></div>
+          <div class="commercial-offer-modal2__content">
+            <div class="commercial-offer-modal2_close"></div>
+            <div class="commercial-offer-modal2__text">
+              <p>Индивидуальное коммерческое предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img"></p>
+            </div>
+            <form id="commercial-offer-modal2__form">
+              <input type="text" placeholder="ИНН">
+              <input type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer2__user-phone">
+              <input type="email" placeholder="mail@mail.ru" id="commercial-offer2__mail">
+              <button type="submit" id="commercial-offer__btn">Получить</button>
+              <p class="error-text"> </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="write-director-modal__container">
+        <div class="write-director-modal">
+          <div class="write-director-modal__overflay"></div>
+          <div class="write-director-modal__content">
+            <div class="write-director-modal__close"></div>
+            <p class="write-director-modal__title">Написать директору</p>
+            <p>Можете нас похвалить или поругать, дать рекомендации или задать вопрос</p>
+            <form id="write-director-modal__form">
+              <div class="fieldset">
+                <div id="write-director-modal__mail">
+                  <input type="text" placeholder="mail@mail.ru" name="email"><span class="error-text"></span>
+                </div>
+                <div id="write-director-modal__phone">
+                  <input type="text" placeholder="+(375) 255-383-444" name="phone">
+                </div>
+              </div>
+              <div id="write-director-modal__message">
+                <textarea placeholder="Ваше сообщение" name="message"></textarea><span class="error-text"></span>
+              </div>
+              <div class="deal-checkbox">
+                <label>
+                  <input type="checkbox" id="deal-checkbox"><i></i>
+                </label>
+                <label><span>Я согласен на обработку моих персональных данных</span></label>
+              </div><span class="error-text"></span>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="complete-modal">
+        <div class="complete-modal__content">
+          <p class="complete-modal__title">Мы скоро с вами свяжемся</p>
+          <p>Спасибо за проявленный интерес к компании <br> Грузчиков-Сервис</p>
+          <button id="complete-modal__btn">Закрыть</button>
+        </div>
+      </div>
+      <script src="js/libs.min.js"></script>
+      <script src="js/main.min.js"></script>
+      <script src="js/contentScripts/service.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+div.write-director-modal__container
+  div.write-director-modal
+    div.write-director-modal__overflay
+    div.write-director-modal__content
+      div.write-director-modal__close
+      p.write-director-modal__title Написать директору
+      p Можете нас похвалить или поругать, дать рекомендации или задать вопрос
+      form#write-director-modal__form
+        div.fieldset
+          div#write-director-modal__mail
+            input(type="text" placeholder="mail@mail.ru" name="email")
+            span.error-text
+          div#write-director-modal__phone
+            input(type="text" placeholder="+(375) 255-383-444" name="phone")
+        div#write-director-modal__message
+          textarea(placeholder="Ваше сообщение" name="message")
+          span.error-text
+        div.deal-checkbox
+          label
+            input(type="checkbox" id="deal-checkbox")
+            i
+          label
+            span Я согласен на обработку моих персональных данных
+        span.error-text
+        button(type="submit") Отправить

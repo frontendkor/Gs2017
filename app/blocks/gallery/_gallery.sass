@@ -1,0 +1,198 @@
+.gallery__img
+  transition: all 2s
+
+/* Style  gelery-thanks =================================================================================== */
+#gallery-thanks
+  overflow: hidden
+  background: #f6f6f6
+  .gallery
+    margin-top: 50px
+    margin-bottom: 50px
+  p 
+    color: $footer__text_color
+    margin-top: 20px
+    margin-bottom: 0
+    padding: 0
+    padding-left: 10px
+    @media screen and (max-width: 767px)
+      text-align: center
+      width: 100%
+  h4 
+    font-family: 'robotomedium'
+    font-size: 16px
+    font-weight: 500
+    margin: 0
+    margin-bottom: 40px
+    padding: 0
+    padding-left: 10px
+    @media screen and (max-width: 767px)
+      margin-bottom: 70px
+      width: 100%
+      text-align: center
+  a  
+    display: block
+    width: 100%
+    height: 353px 
+    margin: auto
+    @media screen and (max-width: 1200px)
+      height: 290px
+    @media screen and (max-width: 992px)
+      height: 450px
+    @media screen and (max-width: 767px)
+      width: 50%
+      height: 350px
+    @media screen and (max-width: 550px)
+      height: 270px
+      width: auto
+    img
+      display: block
+      margin: auto
+      border: solid 1px $nav__link_color
+      width: 100%
+      transition: all .2s
+      @media screen and (max-width: 550px)
+        height: 270px
+        width: auto
+    &:hover
+      img
+        box-shadow: 3px 3px 35px 0px rgba(0, 0, 0, 0.4);
+      
+      
+
+/* Style  gelery-thanks modal widow */
+.gallery__modal
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background: rgba(0, 0, 0, 0.8)
+  text-align: center
+  z-index: 1100
+  figure
+    width: 90%
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    
+    
+.gallery_prev, .gallery_next
+  width: 40px
+  height: 40px
+  background: rgba(0, 0, 0, 0.7)
+  position: relative
+  cursor: pointer
+  transition: all 0.3s
+  border-radius: 50%
+  z-index: 1104
+  @media screen and (max-width: 660px)
+    background: none
+  div
+    width: 10px
+    height: 10px
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+  
+  
+.gallery_prev
+  order: -1
+  margin-right: 30px
+  div
+    border-left: solid 3px $footer__link_color
+    border-bottom: solid 3px $footer__link_color
+    transform: rotate(45deg)
+    left: 17px
+    right: auto
+    
+  
+  
+.gallery_next
+  order: 0
+  margin-left: 30px
+  div
+    border-right: solid 3px $footer__link_color
+    border-bottom: solid 3px $footer__link_color
+    transform: rotate(-45deg)
+    right: 17px
+    left: auto
+
+    
+.gallery__img
+  display: block
+  width: auto
+  z-index: 1102
+  height: 100%
+  margin: auto
+  @media screen and (max-width: 520px)
+    width: 100%
+    height: auto
+  &-container
+    display: flex
+    align-items: center
+    order: 0
+    height: 90vh
+    position: relative
+    @media screen and (max-width: 520px)
+      max-width: 90%
+      height: 100vh
+    
+.gallery__img:hover ~ .gallery_next,
+.gallery__img:hover ~ .gallery_prev
+  opacity: 1
+ 
+  
+.gallery__overlay
+  width: 90%
+  height: 100vh
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  z-index: 1101
+  
+ 
+.close-up-btn
+  position: absolute
+  right: 10px
+  top: 10px
+  cursor: pointer
+  width: 30px
+  height: 30px
+  text-align: center
+  z-index: 1103
+  @media screen and (max-width: 520px)
+    right: -25px 
+    top: 15px
+  &__items:before, &__items:after 
+    position: absolute
+    display: inline-block
+    content: ' '
+    height: 20px
+    width: 2px
+    background-color: $footer__link_color
+    @media screen and (max-width: 520px)
+      width: 4px
+  &__items:before 
+    transform: rotate(45deg)
+  &__items:after 
+    transform: rotate(-45deg)
+  &:hover
+    .close-up-btn__items:before,
+    .close-up-btn__items:after
+      background-color: $footer__text_color
+      
+      
+
+  

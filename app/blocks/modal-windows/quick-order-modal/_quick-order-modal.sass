@@ -1,0 +1,151 @@
+/* Style quick-order-modal ==================================================================================*/ 
+
+.quick-order-modal__container
+  overflow-y: scroll
+  height: 100%
+  width: 100%
+  position: fixed
+  top: 0
+  display: none
+  z-index: 99999
+  color: #fff
+  
+  
+.quick-order-modal
+  display: none
+  position: absolute
+  background: rgba(0, 0, 0, 0.4) 
+  width: 100%
+  min-height: 100%
+  overflow: hidden
+  @media screen and (max-width: 305px)
+    overflow-x: scroll
+  &__overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 0
+  &__content
+    width: 50%
+    min-width: 290px
+    margin: auto
+    border-radius: 10px
+    margin-top: -50px
+    margin-bottom: 100px
+    display: flex
+    background: $footer_bg url(../img/modal-phone.png) no-repeat
+    background-position: bottom left
+    @media screen and (max-width: 1205px)
+      margin-bottom: 70px
+      background: $footer_bg
+      flex-direction: column
+    @media screen and (max-width: 740px)
+      width: 60%
+    @media screen and (max-width: 620px)
+      width: 80%
+    &__content_open
+      margin-top: 50px
+  &__text
+    width: 50%
+    position: relative
+    padding-top: 45px
+    padding-left: 60px
+    display: flex
+    @media screen and (max-width: 1205px)
+      width: 80%
+      padding-left: 0
+      margin: auto
+      justify-content: center
+    p:first-child
+      font-size: 4.5em
+      padding: 0
+      margin: 0
+      font-weight: 100
+      color: #fecc00
+  &__form
+    width: 50%
+    position: relative
+    padding-top: 60px
+    padding-right: 60px
+    padding-bottom: 35px
+    @media screen and (max-width: 1205px)
+      width: 80%
+      margin: auto
+      padding-right: 0
+      padding-top: 30px
+    @media screen and (max-width: 440px)
+      width: 90%
+    p 
+      display: block
+      margin: auto
+      width: 90%
+      font-family: 'robotomedium', Arial, Helvetica, sans-serif
+      font-size: 1.1em
+      font-weight: 100
+      margin-bottom: 35px
+      @media screen and (max-width: 1205px)
+        font-size: 2em
+        text-align: center
+    span
+      display: block
+      margin: auto
+      font-size: 0.9em
+      margin-top: 25px
+      width: 90%
+      text-align: center
+    form
+      display: block
+      margin: auto
+      width: 90%
+      @media screen and (max-width: 1205px)
+        width: 70%
+      @media screen and (max-width: 440px)
+        width: 90%
+      button
+        @include Btn_yellow
+        border: none
+        cursor: pointer
+        width: 100%
+      input
+        width: 100%
+        height: 50px
+        line-height: 50px
+        margin-bottom: 25px
+        border-radius: 5px
+        border: 2px solid #fff
+        font-family: 'robotoregular', Arial, Helvetica, sans-serif
+        font-size: 16px
+        color: black
+        padding: 0 10px
+        box-sizing: border-box
+        outline: none
+        &:focus
+          border: 2px solid $nav__link_hover
+  &__tel
+    margin-top: 25px
+    text-align: center
+  &_close
+    position: absolute
+    right: 32px
+    top: 32px
+    width: 32px
+    height: 32px
+    opacity: 0.3
+    cursor: pointer
+    @media screen and (max-width: 1205px)
+      top: -100px
+    &:before, &:after 
+      position: absolute
+      left: 15px
+      content: ' '
+      height: 25px
+      width: 2px
+      background-color: #fff
+    &:before
+      transform: rotate(45deg)
+    &:after 
+      transform: rotate(-45deg)
+
+      
+.not-correct
+  border: 2px solid red !important

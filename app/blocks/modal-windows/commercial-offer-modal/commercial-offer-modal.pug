@@ -1,0 +1,30 @@
+div.commercial-offer-modal__container
+  div.commercial-offer-modal
+    div.commercial-offer-modal__overlay
+    div.commercial-offer-modal__content
+      div.commercial-offer-modal_open
+        p(style="white-space:nowrap;") Комерческое предложение
+      div.commercial-offer-modal_close
+      form#commercial-offer-modal__form
+        input(type="text" placeholder="ИНН" name="inn")
+        input(type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer__user-phone")
+        input(type="email" placeholder="mail@mail.ru" name="mail" id="commercial-offer__mail")
+        span.error-text
+        button(type="submit" id="call-back__btn") Получить
+        p.error-text 
+      div.commercial-offer-modal__text
+        p Индивидуальное<br class="commercial-offer-modal__br"> коммерческое<br class="commercial-offer-modal__br"> предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img">
+        img.commercial-offer-modal__img(src="img/offer_bg.png", alt="img")
+div.commercial-offer-modal2__container
+  div.commercial-offer-modal2
+    div.commercial-offer-modal2__overlay
+    div.commercial-offer-modal2__content
+      div.commercial-offer-modal2_close
+      div.commercial-offer-modal2__text
+        p Индивидуальное коммерческое предложение<br> <span> за 15 секунд </span><img src="img/offer_ico.png" alt="img">
+      form#commercial-offer-modal2__form
+        input(type="text" placeholder="ИНН")
+        input(type="text" placeholder="+(375) 255-383-444" name="phone" id="commercial-offer2__user-phone")
+        input(type="email" placeholder="mail@mail.ru"  id="commercial-offer2__mail")
+        button(type="submit" id="commercial-offer__btn") Получить
+        p.error-text 
